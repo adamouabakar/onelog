@@ -1,0 +1,125 @@
+{
+  "Meta": {
+    "title": "[One]Log — L'infrastructure IA de l'Afrique",
+    "description": "[One]Log conçoit des infrastructures polyvalentes propulsées par l'intelligence artificielle dans 5 secteurs clés : finance & trading, santé, agriculture, transport & logistique et transactions financières. Résoudre des problèmes concrets, améliorer la vie en Afrique.",
+    "ogAlt": "[One]Log — Infrastructure IA panafricaine"
+  },
+  "Nav": {
+    "pillars": "Secteurs",
+    "vision": "Vision",
+    "stories": "Réussites",
+    "contact": "Nous contacter",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "skipToContent": "Aller au contenu principal",
+    "language": "Langue"
+  },
+  "Hero": {
+    "badge": "Infrastructure IA panafricaine",
+    "titleLead": "Une intelligence,",
+    "titleHighlight": "toute une vie quotidienne",
+    "titleTail": "propulsée en Afrique.",
+    "subtitle": "[One]Log est l'infrastructure polyvalente qui met l'IA au service du réel : trader, se soigner, cultiver, se déplacer et payer — un seul écosystème, cinq secteurs, des millions de vies améliorées.",
+    "ctaPrimary": "Nous contacter",
+    "ctaSecondary": "Explorer nos secteurs",
+    "dashboardTitle": "Votre journée, augmentée par l'IA",
+    "dashboardSubtitle": "Aperçu en direct",
+    "stats": {
+      "sectors": "Secteurs stratégiques",
+      "continent": "Pensé pour l'Afrique",
+      "continentValue": "54 pays",
+      "uptime": "Fiabilité de service",
+      "ai": "Au cœur du système",
+      "aiValue": "IA native"
+    }
+  },
+  "Pillars": {
+    "tag": "Cinq piliers, un écosystème",
+    "title": "L'IA qui résout des problèmes concrets",
+    "subtitle": "Chaque pilier [One]Log s'attaque à un besoin essentiel du quotidien africain — avec la même exigence : la performance au service de l'humain.",
+    "finance": {
+      "name": "Finance & Trading",
+      "badge": "IB",
+      "description": "Analyse de marché, signaux et accompagnement propulsés par l'IA pour démocratiser un trading discipliné et rentable."
+    },
+    "health": {
+      "name": "Santé",
+      "badge": "Care",
+      "description": "Aide à la décision, accès aux soins et suivi intelligent pour rapprocher la santé de qualité de chaque communauté."
+    },
+    "agriculture": {
+      "name": "Agriculture",
+      "badge": "Agro",
+      "description": "Prévisions, optimisation des rendements et conseils agronomiques pour des récoltes plus sûres et durables."
+    },
+    "logistics": {
+      "name": "Transport & Logistique",
+      "badge": "Move",
+      "description": "Itinéraires optimisés, suivi en temps réel et chaînes d'approvisionnement fluides à l'échelle du continent."
+    },
+    "payments": {
+      "name": "Transactions financières",
+      "badge": "Pay",
+      "description": "Paiements rapides, sûrs et inclusifs — une couche de confiance pour l'économie numérique africaine."
+    }
+  },
+  "Vision": {
+    "tag": "Stay Hungry",
+    "title": "Ambitieux. Solidaires. Performants.",
+    "body": "Nous ne construisons pas seulement des produits : nous résolvons des problèmes qui comptent et améliorons des vies. « Stay Hungry » est notre culture — rester affamés d'impact, fidèles à l'Afrique, exigeants sur l'exécution.",
+    "values": {
+      "hungry": {
+        "title": "Affamés d'impact",
+        "description": "Chaque ligne de code doit améliorer une vie réelle."
+      },
+      "together": {
+        "title": "Plus forts ensemble",
+        "description": "Solidarité et talent local au cœur de tout ce que nous bâtissons."
+      },
+      "excellence": {
+        "title": "Performance absolue",
+        "description": "Le niveau mondial, pensé pour les réalités africaines."
+      }
+    }
+  },
+  "Stories": {
+    "tag": "Réussites",
+    "title": "Des vies concrètement transformées",
+    "subtitle": "Premiers résultats à travers nos secteurs.",
+    "items": {
+      "one": {
+        "quote": "Avec [One]Log, j'ai appris à trader avec méthode. Les signaux IA m'ont fait gagner en discipline et en confiance.",
+        "author": "Trader indépendant",
+        "role": "Pilier Finance & Trading"
+      },
+      "two": {
+        "quote": "Le suivi intelligent nous a permis d'orienter plus vite les patients vers les bons soins.",
+        "author": "Professionnel de santé",
+        "role": "Pilier Santé"
+      },
+      "three": {
+        "quote": "Des prévisions fiables ont sécurisé notre récolte et augmenté nos revenus.",
+        "author": "Coopérative agricole",
+        "role": "Pilier Agriculture"
+      }
+    }
+  },
+  "Cta": {
+    "tag": "Construisons ensemble",
+    "title": "Prêt à propulser votre secteur avec l'IA ?",
+    "subtitle": "Parlons de votre projet, de votre marché et de la manière dont [One]Log peut accélérer un impact réel.",
+    "button": "Nous contacter",
+    "secondary": "Découvrir la vision"
+  },
+  "Footer": {
+    "tagline": "L'infrastructure IA polyvalente qui améliore la vie quotidienne en Afrique.",
+    "rights": "Tous droits réservés.",
+    "sectorsTitle": "Secteurs",
+    "companyTitle": "Entreprise",
+    "vision": "Notre vision",
+    "stories": "Réussites",
+    "contact": "Contact",
+    "madeIn": "Bâti en Afrique, pour l'Afrique.",
+    "stayHungry": "Stay Hungry."
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "Meta": {
+    "title": "[One]Log — Africa's AI Infrastructure",
+    "description": "[One]Log builds versatile, AI-powered infrastructure across 5 key sectors: finance & trading, health, agriculture, transport & logistics, and financial transactions. Solving real problems, improving lives in Africa.",
+    "ogAlt": "[One]Log — Pan-African AI infrastructure"
+  },
+  "Nav": {
+    "pillars": "Sectors",
+    "vision": "Vision",
+    "stories": "Stories",
+    "contact": "Contact Us",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "skipToContent": "Skip to main content",
+    "language": "Language"
+  },
+  "Hero": {
+    "badge": "Pan-African AI infrastructure",
+    "titleLead": "One intelligence,",
+    "titleHighlight": "a whole daily life",
+    "titleTail": "powered across Africa.",
+    "subtitle": "[One]Log is the versatile infrastructure putting AI to work in the real world: trade, get care, farm, move and pay — one ecosystem, five sectors, millions of lives improved.",
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "Explore our sectors",
+    "dashboardTitle": "Your day, augmented by AI",
+    "dashboardSubtitle": "Live overview",
+    "stats": {
+      "sectors": "Strategic sectors",
+      "continent": "Built for Africa",
+      "continentValue": "54 countries",
+      "uptime": "Service reliability",
+      "ai": "At the core",
+      "aiValue": "AI-native"
+    }
+  },
+  "Pillars": {
+    "tag": "Five pillars, one ecosystem",
+    "title": "AI that solves real problems",
+    "subtitle": "Every [One]Log pillar tackles an essential everyday need in Africa — with the same standard: performance in service of people.",
+    "finance": {
+      "name": "Finance & Trading",
+      "badge": "IB",
+      "description": "AI-powered market analysis, signals and guidance to democratize disciplined, profitable trading."
+    },
+    "health": {
+      "name": "Health",
+      "badge": "Care",
+      "description": "Decision support, access to care and smart monitoring to bring quality health closer to every community."
+    },
+    "agriculture": {
+      "name": "Agriculture",
+      "badge": "Agro",
+      "description": "Forecasting, yield optimization and agronomic guidance for safer, more sustainable harvests."
+    },
+    "logistics": {
+      "name": "Transport & Logistics",
+      "badge": "Move",
+      "description": "Optimized routes, real-time tracking and seamless supply chains at continental scale."
+    },
+    "payments": {
+      "name": "Financial Transactions",
+      "badge": "Pay",
+      "description": "Fast, secure and inclusive payments — a trust layer for Africa's digital economy."
+    }
+  },
+  "Vision": {
+    "tag": "Stay Hungry",
+    "title": "Ambitious. United. Relentless.",
+    "body": "We don't just build products: we solve problems that matter and improve lives. \"Stay Hungry\" is our culture — hungry for impact, loyal to Africa, uncompromising on execution.",
+    "values": {
+      "hungry": {
+        "title": "Hungry for impact",
+        "description": "Every line of code must improve a real life."
+      },
+      "together": {
+        "title": "Stronger together",
+        "description": "Solidarity and local talent at the heart of everything we build."
+      },
+      "excellence": {
+        "title": "Relentless performance",
+        "description": "World-class, designed for African realities."
+      }
+    }
+  },
+  "Stories": {
+    "tag": "Success stories",
+    "title": "Lives, tangibly transformed",
+    "subtitle": "Early results across our sectors.",
+    "items": {
+      "one": {
+        "quote": "With [One]Log I learned to trade with method. The AI signals gave me discipline and confidence.",
+        "author": "Independent trader",
+        "role": "Finance & Trading pillar"
+      },
+      "two": {
+        "quote": "Smart monitoring helped us route patients to the right care faster.",
+        "author": "Healthcare professional",
+        "role": "Health pillar"
+      },
+      "three": {
+        "quote": "Reliable forecasts secured our harvest and raised our income.",
+        "author": "Farming cooperative",
+        "role": "Agriculture pillar"
+      }
+    }
+  },
+  "Cta": {
+    "tag": "Let's build together",
+    "title": "Ready to power your sector with AI?",
+    "subtitle": "Let's talk about your project, your market, and how [One]Log can accelerate real impact.",
+    "button": "Contact Us",
+    "secondary": "Discover the vision"
+  },
+  "Footer": {
+    "tagline": "The versatile AI infrastructure improving daily life in Africa.",
+    "rights": "All rights reserved.",
+    "sectorsTitle": "Sectors",
+    "companyTitle": "Company",
+    "vision": "Our vision",
+    "stories": "Stories",
+    "contact": "Contact",
+    "madeIn": "Built in Africa, for Africa.",
+    "stayHungry": "Stay Hungry."
+  }
+}

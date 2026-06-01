@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* [One]Log — dark premium par défaut (mappé sur la charte exacte) */
+    --background: 222 45% 9%; /* #0C1220 */
+    --foreground: 0 0% 94%; /* #F0F0F0 */
+
+    --card: 217 44% 14%; /* #142033 */
+    --card-foreground: 0 0% 94%;
+
+    --popover: 217 44% 14%;
+    --popover-foreground: 0 0% 94%;
+
+    --primary: 200 49% 48%; /* #3E8EB5 — bleu électrique */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 217 33% 18%;
+    --secondary-foreground: 0 0% 94%;
+
+    --muted: 217 33% 18%;
+    --muted-foreground: 191 16% 58%; /* #829EA4 — argent */
+
+    --accent: 42 46% 47%; /* #B18F41 — or / premium */
+    --accent-foreground: 222 45% 9%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 217 30% 22%;
+    --input: 217 30% 22%;
+    --ring: 200 49% 48%;
+
+    --radius: 0.85rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary) / 0.3);
+    color: hsl(var(--foreground));
+  }
+
+  /* Respect des préférences d'accessibilité */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Dégradé de texte bleu → or pour les accents premium */
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      100deg,
+      #3e8eb5 0%,
+      #6fb6d6 45%,
+      #b18f41 100%
+    );
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Bordure dégradée subtile pour les cartes premium */
+  .ring-premium {
+    box-shadow:
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.05),
+      0 0 0 1px rgba(130, 158, 164, 0.08);
+  }
+}
