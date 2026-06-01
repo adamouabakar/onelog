@@ -1,9 +1,13 @@
 import { getTranslations } from "next-intl/server";
-import { Quote } from "lucide-react";
 
 import { Reveal } from "@/components/site/reveal";
+import { cn } from "@/lib/utils";
 
-const ITEMS = ["one", "two", "three"] as const;
+const ITEMS = [
+  { key: "agri", metricClass: "text-sector-agri" },
+  { key: "health", metricClass: "text-sector-health" },
+  { key: "finance", metricClass: "text-sector-finance" },
+] as const;
 
 export async function Stories() {
   const t = await getTranslations("Stories");
@@ -22,17 +26,34 @@ export async function Stories() {
         </Reveal>
 
         <div className="mt-12 grid gap-4 md:grid-cols-3">
-          {ITEMS.map((id, i) => (
-            <Reveal key={id} delay={i * 0.08} className="h-full">
+          {ITEMS.map(({ key, metricClass }, i) => (
+            <Reveal key={key} delay={i * 0.08} className="h-full">
               <figure className="flex h-full flex-col rounded-2xl border border-border bg-card p-6">
-                <Quote className="size-7 text-primary/70" />
-                <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-foreground/90">
-                  {t(`items.${id}.quote`)}
+                <div className="flex items-baseline gap-2">
+                  <span
+                    className={cn(
+                      "font-display text-4xl font-extrabold tracking-tight",
+                      metricClass,
+                    )}
+                  >
+                    {t(`items.${key}.metric`)}
+                  </span>
+                  <span className="text-xs text-muted-foreground">
+                    {t(`items.${key}.metricLabel`)}
+                  </span>
+                </div>
+                <h3 className="mt-4 font-display text-base font-semibold leading-snug">
+                  {t(`items.${key}.title`)}
+                </h3>
+                <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
+                  “{t(`items.${key}.quote`)}”
                 </blockquote>
                 <figcaption className="mt-5 border-t border-border pt-4">
-                  <p className="font-medium">{t(`items.${id}.author`)}</p>
+                  <p className="text-sm font-medium text-primary">
+                    {t(`items.${key}.author`)}
+                  </p>
                   <p className="text-xs text-muted-foreground">
-                    {t(`items.${id}.role`)}
+                    {t(`items.${key}.role`)}
                   </p>
                 </figcaption>
               </figure>

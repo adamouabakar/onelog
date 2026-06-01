@@ -1,20 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 48" role="img" aria-label="[one]Log">
   <defs>
-    <linearGradient id="ol-blue" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6FB6D6" />
-      <stop offset="1" stop-color="#3E8EB5" />
+    <linearGradient id="ol-silver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF3F5" />
+      <stop offset="0.55" stop-color="#B9C7CC" />
+      <stop offset="1" stop-color="#829EA4" />
     </linearGradient>
-    <filter id="ol-glow" x="-20%" y="-40%" width="140%" height="180%">
-      <feGaussianBlur stdDeviation="1.1" result="b" />
+    <linearGradient id="ol-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EAD27E" />
+      <stop offset="0.55" stop-color="#C9A24B" />
+      <stop offset="1" stop-color="#B18F41" />
+    </linearGradient>
+    <filter id="ol-glow" x="-15%" y="-30%" width="130%" height="160%">
+      <feGaussianBlur stdDeviation="0.9" result="b" />
       <feMerge>
         <feMergeNode in="b" />
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
   </defs>
-  <g filter="url(#ol-glow)" font-family="'Sora','Inter',system-ui,-apple-system,sans-serif" font-weight="700" font-size="32" letter-spacing="-0.5">
+  <g filter="url(#ol-glow)" font-family="'Sora','Inter',system-ui,-apple-system,sans-serif" font-weight="800" font-size="33" letter-spacing="-1">
     <text x="2" y="35">
-      <tspan fill="url(#ol-blue)">[</tspan><tspan fill="#F0F0F0">one</tspan><tspan fill="url(#ol-blue)">]</tspan><tspan fill="#B18F41">Log</tspan>
+      <tspan fill="url(#ol-silver)">[one]</tspan><tspan fill="url(#ol-gold)">Log</tspan>
     </text>
   </g>
 </svg>

@@ -1,28 +1,51 @@
 import Image from "next/image";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 export async function SiteFooter() {
   const t = await getTranslations("Footer");
-  const p = await getTranslations("Pillars");
+  const d = await getTranslations("Dashboard");
   const year = new Date().getFullYear();
+
   const sectors = [
     "finance",
     "health",
     "agriculture",
-    "logistics",
+    "transport",
     "payments",
   ] as const;
 
+  const company = [
+    { key: "home", href: "#" },
+    { key: "about", href: "#vision" },
+    { key: "careers", href: "#" },
+    { key: "blog", href: "#" },
+    { key: "contact", href: "#contact" },
+  ] as const;
+
+  const legal = [
+    { key: "legalNotice", href: "#" },
+    { key: "privacy", href: "#" },
+    { key: "terms", href: "#" },
+  ] as const;
+
+  const socials = [
+    { Icon: Linkedin, label: "LinkedIn" },
+    { Icon: Twitter, label: "Twitter" },
+    { Icon: Facebook, label: "Facebook" },
+    { Icon: Instagram, label: "Instagram" },
+  ];
+
   return (
-    <footer className="border-t border-border bg-background">
+    <footer className="border-t border-border bg-brand-surface/40">
       <div className="container py-14">
-        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+        <div className="grid gap-10 md:grid-cols-[1.6fr_1fr_1fr_1fr]">
           <div>
             <Image
               src="/onelog-logo.svg"
               alt="[One]Log"
-              width={132}
-              height={30}
+              width={140}
+              height={32}
               unoptimized
               className="h-7 w-auto"
             />
@@ -32,18 +55,30 @@ export async function SiteFooter() {
             <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
               {t("stayHungry")}
             </p>
+            <div className="mt-5 flex items-center gap-2">
+              {socials.map(({ Icon, label }) => (
+                <a
+                  key={label}
+                  href="#"
+                  aria-label={label}
+                  className="grid size-9 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
+                >
+                  <Icon className="size-4" />
+                </a>
+              ))}
+            </div>
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold">{t("sectorsTitle")}</h3>
+            <h3 className="text-sm font-semibold">{t("cols.solutions")}</h3>
             <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
               {sectors.map((s) => (
                 <li key={s}>
                   <a
-                    href="#pillars"
-                    className="transition-colors hover:text-foreground"
+                    href="#dashboard"
+                    className="transition-colors hover:text-primary"
                   >
-                    {p(`${s}.name`)}
+                    {d(`${s}.name`)}
                   </a>
                 </li>
               ))}
@@ -51,32 +86,28 @@ export async function SiteFooter() {
           </div>
 
           <div>
-            <h3 className="text-sm font-semibold">{t("companyTitle")}</h3>
+            <h3 className="text-sm font-semibold">{t("cols.company")}</h3>
             <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-              <li>
-                <a
-                  href="#vision"
-                  className="transition-colors hover:text-foreground"
-                >
-                  {t("vision")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#stories"
-                  className="transition-colors hover:text-foreground"
-                >
-                  {t("stories")}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:contact@onelog.io"
-                  className="transition-colors hover:text-foreground"
-                >
-                  {t("contact")}
-                </a>
-              </li>
+              {company.map(({ key, href }) => (
+                <li key={key}>
+                  <a href={href} className="transition-colors hover:text-primary">
+                    {t(`links.${key}`)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-sm font-semibold">{t("cols.legal")}</h3>
+            <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
+              {legal.map(({ key, href }) => (
+                <li key={key}>
+                  <a href={href} className="transition-colors hover:text-primary">
+                    {t(`links.${key}`)}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -26,6 +26,15 @@ const config: Config = {
           gold: "#B18F41", // accent or / premium
           silver: "#829EA4", // accent argent / texte secondaire
           ink: "#F0F0F0", // texte principal
+          cream: "#DAD3A5", // texte secondaire alternatif (crème)
+        },
+        /* ── Couleurs sectorielles (Dashboard de vie) ─────────── */
+        sector: {
+          finance: "#B18F41", // or
+          health: "#3E8EB5", // bleu électrique
+          agri: "#8BC34A", // vert doux
+          transport: "#FFC107", // orange / jaune
+          pay: "#3E8EB5", // bleu (accent or possible)
         },
         /* ── shadcn/ui semantic tokens (HSL via CSS variables) ── */
         border: "hsl(var(--border))",
@@ -65,6 +74,7 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
         display: ["var(--font-display)", ...fontFamily.sans],
+        mono: ["var(--font-mono)", ...fontFamily.mono],
       },
       borderRadius: {
         xl: "calc(var(--radius) + 4px)",
@@ -110,9 +120,16 @@ const config: Config = {
         shimmer: {
           "100%": { transform: "translateX(100%)" },
         },
-        "aurora": {
+        aurora: {
           "0%, 100%": { transform: "translate(0, 0) rotate(0deg)" },
           "50%": { transform: "translate(2%, -4%) rotate(4deg)" },
+        },
+        twinkle: {
+          "0%, 100%": { opacity: "0.25" },
+          "50%": { opacity: "0.9" },
+        },
+        "spin-slow": {
+          to: { transform: "rotate(360deg)" },
         },
       },
       animation: {
@@ -123,6 +140,8 @@ const config: Config = {
         glow: "glow 4.5s ease-in-out infinite",
         shimmer: "shimmer 2.5s ease-in-out infinite",
         aurora: "aurora 16s ease-in-out infinite",
+        twinkle: "twinkle 5s ease-in-out infinite",
+        "spin-slow": "spin-slow 38s linear infinite",
       },
     },
   },

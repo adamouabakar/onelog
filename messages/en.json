@@ -1,13 +1,13 @@
 {
   "Meta": {
-    "title": "[One]Log — Africa's AI Infrastructure",
-    "description": "[One]Log builds versatile, AI-powered infrastructure across 5 key sectors: finance & trading, health, agriculture, transport & logistics, and financial transactions. Solving real problems, improving lives in Africa.",
+    "title": "[One]Log — The AI transforming everyday life in Africa",
+    "description": "One platform for your finances, your health, your growth and your mobility. [One]Log: Africa's versatile AI infrastructure — finance & trading, health, agriculture, transport and transactions.",
     "ogAlt": "[One]Log — Pan-African AI infrastructure"
   },
   "Nav": {
-    "pillars": "Sectors",
-    "vision": "Vision",
+    "solutions": "Solutions",
     "stories": "Stories",
+    "vision": "Vision",
     "contact": "Contact Us",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -16,110 +16,188 @@
   },
   "Hero": {
     "badge": "Pan-African AI infrastructure",
-    "titleLead": "One intelligence,",
-    "titleHighlight": "a whole daily life",
-    "titleTail": "powered across Africa.",
-    "subtitle": "[One]Log is the versatile infrastructure putting AI to work in the real world: trade, get care, farm, move and pay — one ecosystem, five sectors, millions of lives improved.",
-    "ctaPrimary": "Contact Us",
-    "ctaSecondary": "Explore our sectors",
-    "dashboardTitle": "Your day, augmented by AI",
-    "dashboardSubtitle": "Live overview",
-    "stats": {
-      "sectors": "Strategic sectors",
-      "continent": "Built for Africa",
-      "continentValue": "54 countries",
-      "uptime": "Service reliability",
-      "ai": "At the core",
-      "aiValue": "AI-native"
+    "titleA": "The ",
+    "titleAI": "AI",
+    "titleB": " that transforms your everyday life in ",
+    "titleAfrica": "Africa",
+    "titleC": ".",
+    "subtitle": "One platform for your finances, your health, your growth and your mobility. [One]Log: the future of Africa, today.",
+    "ctaPrimary": "Discover [One]Log",
+    "ctaSecondary": "Contact Us",
+    "logoAlt": "[One]Log — AI visualization"
+  },
+  "Hub": {
+    "tag": "Proof through AI",
+    "title": "One AI, all your sectors",
+    "subtitle": "Our AI continuously processes data from five essential sectors to generate concrete, real-time solutions.",
+    "core": "[One]Log AI",
+    "flow": "Data → Intelligence → Solutions",
+    "outputs": {
+      "decisions": "Decisions",
+      "alerts": "Alerts",
+      "optimizations": "Optimizations"
     }
   },
-  "Pillars": {
-    "tag": "Five pillars, one ecosystem",
-    "title": "AI that solves real problems",
-    "subtitle": "Every [One]Log pillar tackles an essential everyday need in Africa — with the same standard: performance in service of people.",
+  "Dashboard": {
+    "tag": "The heart of [One]Log",
+    "title": "Your everyday life, augmented by AI",
+    "subtitle": "A single dashboard to run what matters — finances, health, harvests, logistics and payments.",
+    "live": "live",
     "finance": {
       "name": "Finance & Trading",
-      "badge": "IB",
-      "description": "AI-powered market analysis, signals and guidance to democratize disciplined, profitable trading."
+      "tag": "Trading & IB",
+      "title": "Your Markets at a Glance",
+      "content": "Optimize your investments with AI. Access financial markets and manage your IB partners with unmatched precision. Predictive analytics at your fingertips.",
+      "cta": "Go to Finance",
+      "w": {
+        "portfolio": "Portfolio",
+        "today": "Today",
+        "alert": "AI alert · XAU/USD",
+        "alertHint": "Buy signal detected"
+      }
     },
     "health": {
       "name": "Health",
-      "badge": "Care",
-      "description": "Decision support, access to care and smart monitoring to bring quality health closer to every community."
+      "tag": "Care",
+      "title": "Your Well-being, Our Priority",
+      "content": "From managing your prescriptions to finding pharmacies, [One]Log's AI looks after your health. Smart solutions for a healthier life.",
+      "cta": "Manage my Health",
+      "w": {
+        "appointment": "Next appointment",
+        "doctor": "Dr. Aïcha Bello · Cardiology",
+        "when": "Tomorrow, 09:30",
+        "med": "Medication reminder",
+        "medHint": "Amlodipine · 1 tablet · 20:00",
+        "pharmacy": "Partner pharmacy 400 m away"
+      }
     },
     "agriculture": {
       "name": "Agriculture",
-      "badge": "Agro",
-      "description": "Forecasting, yield optimization and agronomic guidance for safer, more sustainable harvests."
+      "tag": "Agri-Tech",
+      "title": "Optimize Your Harvests",
+      "content": "Revolutionize your farming with AI. Accurate weather forecasts, disease detection, yield optimization. Cultivate the future.",
+      "cta": "Go to Agri-Tech",
+      "w": {
+        "crop": "Crop status",
+        "cropStatus": "Healthy · 92%",
+        "weather": "Rain expected in 2 days",
+        "price": "Maize",
+        "priceVal": "+4.2% this week",
+        "alert": "Irrigation recommended"
+      }
     },
-    "logistics": {
+    "transport": {
       "name": "Transport & Logistics",
-      "badge": "Move",
-      "description": "Optimized routes, real-time tracking and seamless supply chains at continental scale."
+      "tag": "Move",
+      "title": "Your Logistics, Simplified",
+      "content": "From fleet management to route optimization, our AI streamlines your operations. Efficiency and speed for every journey.",
+      "cta": "Manage Transport",
+      "w": {
+        "shipment": "Shipment #ON-2481",
+        "route": "Douala → Yaoundé",
+        "eta": "ETA 14:20 · on time",
+        "fleet": "Fleet",
+        "fleetVal": "12 active vehicles",
+        "maintenance": "Maintenance in 3 days"
+      }
     },
     "payments": {
       "name": "Financial Transactions",
-      "badge": "Pay",
-      "description": "Fast, secure and inclusive payments — a trust layer for Africa's digital economy."
-    }
-  },
-  "Vision": {
-    "tag": "Stay Hungry",
-    "title": "Ambitious. United. Relentless.",
-    "body": "We don't just build products: we solve problems that matter and improve lives. \"Stay Hungry\" is our culture — hungry for impact, loyal to Africa, uncompromising on execution.",
-    "values": {
-      "hungry": {
-        "title": "Hungry for impact",
-        "description": "Every line of code must improve a real life."
-      },
-      "together": {
-        "title": "Stronger together",
-        "description": "Solidarity and local talent at the heart of everything we build."
-      },
-      "excellence": {
-        "title": "Relentless performance",
-        "description": "World-class, designed for African realities."
+      "tag": "Pay",
+      "title": "Instant, Secure Transfers",
+      "content": "Send and receive money with confidence. Fast, secure and transparent digital transactions, everywhere in Africa.",
+      "cta": "Make a Transfer",
+      "w": {
+        "balance": "Available balance",
+        "lastTransfer": "Last transfer",
+        "lastHint": "From Fatou D. · received",
+        "send": "Send",
+        "receive": "Receive",
+        "secure": "Secure · encrypted"
       }
     }
   },
   "Stories": {
-    "tag": "Success stories",
-    "title": "Lives, tangibly transformed",
-    "subtitle": "Early results across our sectors.",
+    "tag": "[One]Log changes your life",
+    "title": "Real Problems, Real Solutions",
+    "subtitle": "Every day, [One]Log harnesses the power of AI to solve Africa's most pressing challenges. See how we transform lives, one sector at a time.",
     "items": {
-      "one": {
-        "quote": "With [One]Log I learned to trade with method. The AI signals gave me discipline and confidence.",
-        "author": "Independent trader",
-        "role": "Finance & Trading pillar"
+      "agri": {
+        "metric": "+30%",
+        "metricLabel": "yield",
+        "title": "The AI that saved Mr. Diallo's harvest",
+        "quote": "[One]Log's forecasts and alerts let me anticipate disease and irrigate at the right time. My harvest grew by 30%.",
+        "author": "Mr. Diallo",
+        "role": "Farming cooperative · Agriculture"
       },
-      "two": {
-        "quote": "Smart monitoring helped us route patients to the right care faster.",
-        "author": "Healthcare professional",
-        "role": "Health pillar"
+      "health": {
+        "metric": "24/7",
+        "metricLabel": "access to care",
+        "title": "Easier access to medicine for Mrs. Traoré",
+        "quote": "[One]Log connected me to the right pharmacy and reminded me of my treatments. I manage my health stress-free.",
+        "author": "Mrs. Traoré",
+        "role": "Patient · Health"
       },
-      "three": {
-        "quote": "Reliable forecasts secured our harvest and raised our income.",
-        "author": "Farming cooperative",
-        "role": "Agriculture pillar"
+      "finance": {
+        "metric": "100%",
+        "metricLabel": "peace of mind",
+        "title": "Stronger security for traders",
+        "quote": "Thanks to AI analytics, I trade with method and calm. [One]Log's security changed the way I invest.",
+        "author": "IB Trader",
+        "role": "Finance & Trading"
       }
     }
   },
-  "Cta": {
+  "Vision": {
+    "tag": "Our vision: an African monopoly",
+    "title": "Building Africa's Future, Together",
+    "body": "At [One]Log, we are driven by a \"Stay Hungry\" culture: an insatiable thirst for innovation and a deep commitment to the continent. Our vision is clear: to become the one versatile African infrastructure, unifying essential services for a prosperous, united future.",
+    "stayHungry": "Stay Hungry",
+    "cta": "Join the Adventure",
+    "mapTitle": "Impact zones",
+    "mapHint": "Presence and rollout across the continent",
+    "values": {
+      "hungry": {
+        "title": "Hungry for impact",
+        "description": "Every solution must improve a real life."
+      },
+      "together": {
+        "title": "Stronger together",
+        "description": "Solidarity and local talent at the core of the project."
+      },
+      "excellence": {
+        "title": "Relentless performance",
+        "description": "World-class, designed for Africa."
+      }
+    }
+  },
+  "Contact": {
     "tag": "Let's build together",
-    "title": "Ready to power your sector with AI?",
-    "subtitle": "Let's talk about your project, your market, and how [One]Log can accelerate real impact.",
+    "title": "Ready to transform daily life with AI?",
+    "subtitle": "Let's talk about your sector, your market, and how [One]Log can accelerate real impact.",
     "button": "Contact Us",
-    "secondary": "Discover the vision"
+    "secondary": "Join the Adventure",
+    "email": "contact@onelog.com"
   },
   "Footer": {
-    "tagline": "The versatile AI infrastructure improving daily life in Africa.",
-    "rights": "All rights reserved.",
-    "sectorsTitle": "Sectors",
-    "companyTitle": "Company",
-    "vision": "Our vision",
-    "stories": "Stories",
-    "contact": "Contact",
+    "tagline": "The versatile AI infrastructure transforming everyday life in Africa.",
+    "stayHungry": "Stay Hungry.",
     "madeIn": "Built in Africa, for Africa.",
-    "stayHungry": "Stay Hungry."
+    "rights": "All rights reserved.",
+    "cols": {
+      "solutions": "Solutions",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "careers": "Careers",
+      "blog": "Blog",
+      "contact": "Contact",
+      "legalNotice": "Legal Notice",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
   }
 }

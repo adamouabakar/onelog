@@ -9,9 +9,9 @@ import { LocaleSwitcher } from "@/components/site/locale-switcher";
 export async function SiteHeader() {
   const t = await getTranslations("Nav");
   const links = [
-    { href: "#pillars", label: t("pillars") },
-    { href: "#vision", label: t("vision") },
+    { href: "#dashboard", label: t("solutions") },
     { href: "#stories", label: t("stories") },
+    { href: "#vision", label: t("vision") },
   ];
 
   return (
@@ -21,8 +21,8 @@ export async function SiteHeader() {
           <Image
             src="/onelog-logo.svg"
             alt="[One]Log"
-            width={132}
-            height={30}
+            width={140}
+            height={32}
             priority
             unoptimized
             className="h-7 w-auto"

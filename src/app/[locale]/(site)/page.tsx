@@ -1,10 +1,11 @@
 import { setRequestLocale } from "next-intl/server";
 
 import { Hero } from "@/components/site/sections/hero";
-import { Pillars } from "@/components/site/sections/pillars";
-import { Vision } from "@/components/site/sections/vision";
+import { Hub } from "@/components/site/sections/hub";
+import { Dashboard } from "@/components/site/sections/dashboard";
 import { Stories } from "@/components/site/sections/stories";
-import { Cta } from "@/components/site/sections/cta";
+import { Vision } from "@/components/site/sections/vision";
+import { Contact } from "@/components/site/sections/contact";
 
 export default async function HomePage({
   params,
@@ -17,10 +18,11 @@ export default async function HomePage({
   return (
     <>
       <Hero />
-      <Pillars />
-      <Vision />
+      <Hub />
+      <Dashboard />
       <Stories />
-      <Cta />
+      <Vision />
+      <Contact />
     </>
   );
 }

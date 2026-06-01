@@ -1,13 +1,13 @@
 {
   "Meta": {
-    "title": "[One]Log — L'infrastructure IA de l'Afrique",
-    "description": "[One]Log conçoit des infrastructures polyvalentes propulsées par l'intelligence artificielle dans 5 secteurs clés : finance & trading, santé, agriculture, transport & logistique et transactions financières. Résoudre des problèmes concrets, améliorer la vie en Afrique.",
+    "title": "[One]Log — L'IA qui transforme votre quotidien en Afrique",
+    "description": "Une seule plateforme pour vos finances, votre santé, votre croissance et votre mobilité. [One]Log : l'infrastructure IA polyvalente africaine — finance & trading, santé, agriculture, transport et transactions.",
     "ogAlt": "[One]Log — Infrastructure IA panafricaine"
   },
   "Nav": {
-    "pillars": "Secteurs",
-    "vision": "Vision",
+    "solutions": "Solutions",
     "stories": "Réussites",
+    "vision": "Vision",
     "contact": "Nous contacter",
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
@@ -16,110 +16,188 @@
   },
   "Hero": {
     "badge": "Infrastructure IA panafricaine",
-    "titleLead": "Une intelligence,",
-    "titleHighlight": "toute une vie quotidienne",
-    "titleTail": "propulsée en Afrique.",
-    "subtitle": "[One]Log est l'infrastructure polyvalente qui met l'IA au service du réel : trader, se soigner, cultiver, se déplacer et payer — un seul écosystème, cinq secteurs, des millions de vies améliorées.",
-    "ctaPrimary": "Nous contacter",
-    "ctaSecondary": "Explorer nos secteurs",
-    "dashboardTitle": "Votre journée, augmentée par l'IA",
-    "dashboardSubtitle": "Aperçu en direct",
-    "stats": {
-      "sectors": "Secteurs stratégiques",
-      "continent": "Pensé pour l'Afrique",
-      "continentValue": "54 pays",
-      "uptime": "Fiabilité de service",
-      "ai": "Au cœur du système",
-      "aiValue": "IA native"
+    "titleA": "L'",
+    "titleAI": "IA",
+    "titleB": " qui transforme votre quotidien en ",
+    "titleAfrica": "Afrique",
+    "titleC": ".",
+    "subtitle": "Une seule plateforme pour vos finances, votre santé, votre croissance et votre mobilité. [One]Log : l'avenir de l'Afrique, aujourd'hui.",
+    "ctaPrimary": "Découvrir [One]Log",
+    "ctaSecondary": "Nous contacter",
+    "logoAlt": "[One]Log — visualisation de l'IA"
+  },
+  "Hub": {
+    "tag": "La preuve par l'IA",
+    "title": "Une seule IA, tous vos secteurs",
+    "subtitle": "Notre IA traite en continu les données de cinq secteurs essentiels pour générer des solutions concrètes, en temps réel.",
+    "core": "IA [One]Log",
+    "flow": "Données → Intelligence → Solutions",
+    "outputs": {
+      "decisions": "Décisions",
+      "alerts": "Alertes",
+      "optimizations": "Optimisations"
     }
   },
-  "Pillars": {
-    "tag": "Cinq piliers, un écosystème",
-    "title": "L'IA qui résout des problèmes concrets",
-    "subtitle": "Chaque pilier [One]Log s'attaque à un besoin essentiel du quotidien africain — avec la même exigence : la performance au service de l'humain.",
+  "Dashboard": {
+    "tag": "Le cœur de [One]Log",
+    "title": "Votre vie quotidienne, augmentée par l'IA",
+    "subtitle": "Un tableau de bord unique pour piloter l'essentiel — finances, santé, récoltes, logistique et paiements.",
+    "live": "en direct",
     "finance": {
       "name": "Finance & Trading",
-      "badge": "IB",
-      "description": "Analyse de marché, signaux et accompagnement propulsés par l'IA pour démocratiser un trading discipliné et rentable."
+      "tag": "Trading & IB",
+      "title": "Vos Marchés en un Coup d'Œil",
+      "content": "Optimisez vos investissements avec l'IA. Accédez aux marchés financiers et gérez vos partenaires IB avec une précision inégalée. Des analyses prédictives à portée de main.",
+      "cta": "Accéder à la Finance",
+      "w": {
+        "portfolio": "Portefeuille",
+        "today": "Aujourd'hui",
+        "alert": "Alerte IA · XAU/USD",
+        "alertHint": "Signal d'achat détecté"
+      }
     },
     "health": {
       "name": "Santé",
-      "badge": "Care",
-      "description": "Aide à la décision, accès aux soins et suivi intelligent pour rapprocher la santé de qualité de chaque communauté."
+      "tag": "Care",
+      "title": "Votre Bien-être, Notre Priorité",
+      "content": "De la gestion de vos ordonnances à la recherche de pharmacies, l'IA de [One]Log veille sur votre santé. Des solutions intelligentes pour une vie plus saine.",
+      "cta": "Gérer ma Santé",
+      "w": {
+        "appointment": "Prochain rendez-vous",
+        "doctor": "Dr. Aïcha Bello · Cardiologie",
+        "when": "Demain, 09:30",
+        "med": "Rappel médicament",
+        "medHint": "Amlodipine · 1 comprimé · 20:00",
+        "pharmacy": "Pharmacie partenaire à 400 m"
+      }
     },
     "agriculture": {
       "name": "Agriculture",
-      "badge": "Agro",
-      "description": "Prévisions, optimisation des rendements et conseils agronomiques pour des récoltes plus sûres et durables."
+      "tag": "Agri-Tech",
+      "title": "Optimisez Vos Récoltes",
+      "content": "Révolutionnez votre agriculture avec l'IA. Prévisions météo précises, détection des maladies, optimisation des rendements. Cultivez l'avenir.",
+      "cta": "Accéder à Agri-Tech",
+      "w": {
+        "crop": "État des cultures",
+        "cropStatus": "Sain · 92%",
+        "weather": "Pluie prévue dans 2 j",
+        "price": "Maïs",
+        "priceVal": "+4,2% cette semaine",
+        "alert": "Irrigation recommandée"
+      }
     },
-    "logistics": {
+    "transport": {
       "name": "Transport & Logistique",
-      "badge": "Move",
-      "description": "Itinéraires optimisés, suivi en temps réel et chaînes d'approvisionnement fluides à l'échelle du continent."
+      "tag": "Move",
+      "title": "Votre Logistique Simplifiée",
+      "content": "De la gestion de flotte à l'optimisation des itinéraires, notre IA fluidifie vos opérations. Efficacité et rapidité pour tous vos déplacements.",
+      "cta": "Gérer le Transport",
+      "w": {
+        "shipment": "Expédition #ON-2481",
+        "route": "Douala → Yaoundé",
+        "eta": "ETA 14:20 · à l'heure",
+        "fleet": "Flotte",
+        "fleetVal": "12 véhicules actifs",
+        "maintenance": "Maintenance dans 3 j"
+      }
     },
     "payments": {
-      "name": "Transactions financières",
-      "badge": "Pay",
-      "description": "Paiements rapides, sûrs et inclusifs — une couche de confiance pour l'économie numérique africaine."
-    }
-  },
-  "Vision": {
-    "tag": "Stay Hungry",
-    "title": "Ambitieux. Solidaires. Performants.",
-    "body": "Nous ne construisons pas seulement des produits : nous résolvons des problèmes qui comptent et améliorons des vies. « Stay Hungry » est notre culture — rester affamés d'impact, fidèles à l'Afrique, exigeants sur l'exécution.",
-    "values": {
-      "hungry": {
-        "title": "Affamés d'impact",
-        "description": "Chaque ligne de code doit améliorer une vie réelle."
-      },
-      "together": {
-        "title": "Plus forts ensemble",
-        "description": "Solidarité et talent local au cœur de tout ce que nous bâtissons."
-      },
-      "excellence": {
-        "title": "Performance absolue",
-        "description": "Le niveau mondial, pensé pour les réalités africaines."
+      "name": "Transactions Financières",
+      "tag": "Pay",
+      "title": "Transferts Instantanés et Sécurisés",
+      "content": "Envoyez et recevez de l'argent en toute confiance. Des transactions numériques rapides, sécurisées et transparentes, partout en Afrique.",
+      "cta": "Effectuer un Transfert",
+      "w": {
+        "balance": "Solde disponible",
+        "lastTransfer": "Dernier transfert",
+        "lastHint": "À Fatou D. · reçu",
+        "send": "Envoyer",
+        "receive": "Recevoir",
+        "secure": "Sécurisé · chiffré"
       }
     }
   },
   "Stories": {
-    "tag": "Réussites",
-    "title": "Des vies concrètement transformées",
-    "subtitle": "Premiers résultats à travers nos secteurs.",
+    "tag": "[One]Log change votre vie",
+    "title": "Des Problèmes Concrets, des Solutions Concrètes",
+    "subtitle": "Chaque jour, [One]Log utilise la puissance de l'IA pour résoudre les défis les plus pressants de l'Afrique. Découvrez comment nous transformons des vies, un secteur à la fois.",
     "items": {
-      "one": {
-        "quote": "Avec [One]Log, j'ai appris à trader avec méthode. Les signaux IA m'ont fait gagner en discipline et en confiance.",
-        "author": "Trader indépendant",
-        "role": "Pilier Finance & Trading"
+      "agri": {
+        "metric": "+30%",
+        "metricLabel": "de rendement",
+        "title": "L'IA qui a sauvé la récolte de M. Diallo",
+        "quote": "Les prévisions et alertes de [One]Log m'ont permis d'anticiper la maladie et d'irriguer au bon moment. Ma récolte a augmenté de 30%.",
+        "author": "M. Diallo",
+        "role": "Coopérative agricole · Agriculture"
       },
-      "two": {
-        "quote": "Le suivi intelligent nous a permis d'orienter plus vite les patients vers les bons soins.",
-        "author": "Professionnel de santé",
-        "role": "Pilier Santé"
+      "health": {
+        "metric": "24/7",
+        "metricLabel": "accès aux soins",
+        "title": "Accès facilité aux médicaments pour Mme Traoré",
+        "quote": "[One]Log m'a connectée à la bonne pharmacie et m'a rappelé mes traitements. Je gère ma santé sans stress.",
+        "author": "Mme Traoré",
+        "role": "Patiente · Santé"
       },
-      "three": {
-        "quote": "Des prévisions fiables ont sécurisé notre récolte et augmenté nos revenus.",
-        "author": "Coopérative agricole",
-        "role": "Pilier Agriculture"
+      "finance": {
+        "metric": "100%",
+        "metricLabel": "tranquillité d'esprit",
+        "title": "Sécurité renforcée pour les traders",
+        "quote": "Grâce aux analyses de l'IA, je trade avec méthode et sérénité. La sécurité de [One]Log a changé ma façon d'investir.",
+        "author": "Trader IB",
+        "role": "Finance & Trading"
       }
     }
   },
-  "Cta": {
+  "Vision": {
+    "tag": "Notre vision : monopole africain",
+    "title": "Bâtir l'Avenir de l'Afrique, Ensemble",
+    "body": "Chez [One]Log, nous sommes animés par une culture « Stay Hungry » : une soif insatiable d'innovation et un engagement profond envers le continent. Notre vision est claire : devenir la seule infrastructure polyvalente africaine, unifiant les services essentiels pour un avenir prospère et solidaire.",
+    "stayHungry": "Stay Hungry",
+    "cta": "Rejoindre l'Aventure",
+    "mapTitle": "Zones d'impact",
+    "mapHint": "Présence et déploiement à travers le continent",
+    "values": {
+      "hungry": {
+        "title": "Affamés d'impact",
+        "description": "Chaque solution doit améliorer une vie réelle."
+      },
+      "together": {
+        "title": "Plus forts ensemble",
+        "description": "Solidarité et talent local au cœur du projet."
+      },
+      "excellence": {
+        "title": "Performance absolue",
+        "description": "Niveau mondial, pensé pour l'Afrique."
+      }
+    }
+  },
+  "Contact": {
     "tag": "Construisons ensemble",
-    "title": "Prêt à propulser votre secteur avec l'IA ?",
-    "subtitle": "Parlons de votre projet, de votre marché et de la manière dont [One]Log peut accélérer un impact réel.",
+    "title": "Prêt à transformer votre quotidien avec l'IA ?",
+    "subtitle": "Parlons de votre secteur, de votre marché et de la manière dont [One]Log peut accélérer un impact réel.",
     "button": "Nous contacter",
-    "secondary": "Découvrir la vision"
+    "secondary": "Rejoindre l'Aventure",
+    "email": "contact@onelog.com"
   },
   "Footer": {
-    "tagline": "L'infrastructure IA polyvalente qui améliore la vie quotidienne en Afrique.",
-    "rights": "Tous droits réservés.",
-    "sectorsTitle": "Secteurs",
-    "companyTitle": "Entreprise",
-    "vision": "Notre vision",
-    "stories": "Réussites",
-    "contact": "Contact",
+    "tagline": "L'infrastructure IA polyvalente qui transforme le quotidien en Afrique.",
+    "stayHungry": "Stay Hungry.",
     "madeIn": "Bâti en Afrique, pour l'Afrique.",
-    "stayHungry": "Stay Hungry."
+    "rights": "Tous droits réservés.",
+    "cols": {
+      "solutions": "Solutions",
+      "company": "Entreprise",
+      "legal": "Légal"
+    },
+    "links": {
+      "home": "Accueil",
+      "about": "À Propos",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "contact": "Contact",
+      "legalNotice": "Mentions Légales",
+      "privacy": "Politique de Confidentialité",
+      "terms": "Conditions Générales"
+    }
   }
 }
