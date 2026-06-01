@@ -93,6 +93,10 @@ export async function generateMetadata({
       description: t("description"),
       images: ["/onelog-logo.jpg"],
     },
+    icons: {
+      icon: "/favicon.svg",
+      apple: "/favicon.svg",
+    },
   };
 }
 
