@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { LocaleSwitcher } from "@/components/site/locale-switcher";
+import { MobileNav } from "@/components/site/mobile-nav";
 
 export async function SiteHeader() {
   const t = await getTranslations("Nav");
@@ -43,11 +44,12 @@ export async function SiteHeader() {
 
         <div className="flex items-center gap-2.5">
           <LocaleSwitcher />
-          <Button asChild size="sm" className="hidden sm:inline-flex">
+          <Button asChild size="sm" className="hidden md:inline-flex">
             <a href="#contact">
               {t("contact")} <ArrowRight />
             </a>
           </Button>
+          <MobileNav />
         </div>
       </div>
     </header>

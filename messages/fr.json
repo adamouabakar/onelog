@@ -38,6 +38,12 @@
       "optimizations": "Optimisations"
     }
   },
+  "Pillars": {
+    "sectors": "Secteurs unifiés",
+    "platform": "Plateforme unique",
+    "languages": "Bilingue · FR & EN",
+    "always": "Intelligence en continu"
+  },
   "Dashboard": {
     "tag": "Le cœur de [One]Log",
     "title": "Votre vie quotidienne, augmentée par l'IA",
@@ -177,7 +183,7 @@
     "subtitle": "Parlons de votre secteur, de votre marché et de la manière dont [One]Log peut accélérer un impact réel.",
     "button": "Nous contacter",
     "secondary": "Rejoindre l'Aventure",
-    "email": "contact@onelog.com"
+    "email": "contact@onelog.io"
   },
   "Footer": {
     "tagline": "L'infrastructure IA polyvalente qui transforme le quotidien en Afrique.",

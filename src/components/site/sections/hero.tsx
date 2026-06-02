@@ -13,6 +13,10 @@ export async function Hero() {
       {/* Fond : ciel étoilé (rappel du logo) + halo bleu */}
       <div aria-hidden className="pointer-events-none absolute inset-0 starfield opacity-70" />
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-radial-glow" />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-1/2 top-[-15%] h-[42rem] w-[42rem] -translate-x-1/2 animate-aurora rounded-full bg-radial-glow opacity-50 blur-3xl"
+      />
 
       <div className="container relative grid items-center gap-10 py-20 md:py-28 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
@@ -65,7 +69,6 @@ export async function Hero() {
               width={928}
               height={1104}
               priority
-              unoptimized
               sizes="(max-width: 1024px) 70vw, 480px"
               className="h-auto w-[min(78vw,460px)] select-none [mask-image:radial-gradient(72%_72%_at_50%_45%,black_58%,transparent_100%)]"
             />

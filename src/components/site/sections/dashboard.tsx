@@ -18,6 +18,7 @@ import {
   Wallet,
 } from "lucide-react";
 
+import { CountUp } from "@/components/site/count-up";
 import { Reveal } from "@/components/site/reveal";
 import { cn } from "@/lib/utils";
 
@@ -44,6 +45,7 @@ function Spark({ className }: { className?: string }) {
       aria-hidden
     >
       <polyline
+        className="spark-line"
         points="0,38 24,30 48,34 72,22 96,26 120,14 144,18 168,8 200,12"
         stroke="currentColor"
         strokeWidth="2"
@@ -208,7 +210,7 @@ export async function Dashboard() {
                       {d("finance.w.portfolio")}
                     </p>
                     <p className="font-mono text-2xl font-semibold">
-                      1 248 300{" "}
+                      <CountUp to={1248300} formatter="fcfa" />{" "}
                       <span className="text-sm text-muted-foreground">FCFA</span>
                     </p>
                   </div>
@@ -382,7 +384,7 @@ export async function Dashboard() {
                   {d("payments.w.balance")}
                 </p>
                 <p className="font-mono text-2xl font-semibold">
-                  340 500{" "}
+                  <CountUp to={340500} formatter="fcfa" />{" "}
                   <span className="text-sm text-muted-foreground">FCFA</span>
                 </p>
                 <div className="mt-3 flex items-center justify-between rounded-lg bg-background/60 px-3 py-2 text-xs">

@@ -70,15 +70,26 @@ export async function Hub() {
 
               {/* Cœur : IA [One]Log */}
               <div className="relative grid place-items-center py-2">
+                {/* anneau externe */}
                 <div
                   aria-hidden
-                  className="absolute size-32 animate-spin-slow rounded-full border border-dashed border-primary/30"
+                  className="absolute size-36 animate-spin-slow rounded-full border border-dashed border-primary/25"
                 />
+                {/* anneau interne contra-rotatif */}
                 <div
                   aria-hidden
-                  className="absolute size-24 rounded-full bg-primary/15 blur-xl"
+                  className="absolute size-28 animate-spin-slow rounded-full border border-dashed border-accent/20 [animation-direction:reverse] [animation-duration:26s]"
                 />
-                <div className="relative grid size-24 place-items-center rounded-full border border-primary/40 bg-background/70 text-center shadow-glow">
+                {/* point de donnée en orbite */}
+                <div aria-hidden className="absolute size-36 animate-spin-slow">
+                  <span className="absolute left-1/2 top-0 size-2.5 -translate-x-1/2 rounded-full bg-primary shadow-glow" />
+                </div>
+                {/* halo pulsé */}
+                <div
+                  aria-hidden
+                  className="absolute size-24 animate-glow rounded-full bg-primary/15 blur-xl"
+                />
+                <div className="relative grid size-24 place-items-center rounded-full border border-primary/40 bg-background/80 text-center shadow-glow">
                   <div>
                     <Sparkles className="mx-auto size-5 text-primary" />
                     <p className="mt-1 font-display text-xs font-semibold leading-tight">

@@ -78,20 +78,11 @@ export async function generateMetadata({
       description: t("description"),
       url: `/${locale}`,
       locale: locale === "fr" ? "fr_FR" : "en_US",
-      images: [
-        {
-          url: "/onelog-logo.jpg",
-          width: 928,
-          height: 1104,
-          alt: t("ogAlt"),
-        },
-      ],
     },
     twitter: {
       card: "summary_large_image",
       title: t("title"),
       description: t("description"),
-      images: ["/onelog-logo.jpg"],
     },
     icons: {
       icon: "/favicon.svg",
@@ -114,6 +105,31 @@ export default async function LocaleLayout({
 
   setRequestLocale(locale);
   const messages = await getMessages();
+  const tMeta = await getTranslations({ locale, namespace: "Meta" });
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://onelog.io/#organization",
+        name: "[One]Log",
+        url: "https://onelog.io",
+        logo: "https://onelog.io/onelog-logo.jpg",
+        description: tMeta("description"),
+        slogan: "Stay Hungry.",
+        areaServed: "Africa",
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://onelog.io/#website",
+        url: "https://onelog.io",
+        name: "[One]Log",
+        inLanguage: locale,
+        publisher: { "@id": "https://onelog.io/#organization" },
+      },
+    ],
+  };
 
   return (
     <html
@@ -122,6 +138,10 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="min-h-dvh bg-background font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
