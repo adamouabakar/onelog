@@ -239,6 +239,40 @@
     "secondary": "Rejoindre l'Aventure",
     "email": "contact@onelog.io"
   },
+  "Legal": {
+    "backToHome": "Accueil",
+    "updated": "Dernière mise à jour",
+    "legal-notice": {
+      "title": "Mentions Légales",
+      "sections": [
+        { "heading": "Éditeur", "body": "Le présent site est édité par [One]Log. Pour toute question, écrivez-nous à contact@onelog.io." },
+        { "heading": "Directeur de la publication", "body": "[À compléter — nom du responsable de la publication.]" },
+        { "heading": "Hébergement", "body": "Le site est hébergé par Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, États-Unis (vercel.com)." },
+        { "heading": "Propriété intellectuelle", "body": "L'ensemble des contenus — textes, visuels, logo et code — est la propriété de [One]Log, sauf mention contraire. Toute reproduction sans autorisation préalable est interdite." },
+        { "heading": "Coordonnées légales", "body": "[À compléter — raison sociale, forme juridique, adresse du siège et numéro d'immatriculation.]" }
+      ]
+    },
+    "privacy": {
+      "title": "Politique de Confidentialité",
+      "sections": [
+        { "heading": "Données collectées", "body": "Ce site vitrine ne collecte aucune donnée à votre insu. Les seules informations traitées sont celles que vous nous transmettez volontairement par e-mail." },
+        { "heading": "Cookies & traceurs", "body": "Le site n'utilise ni cookie publicitaire, ni traceur tiers à des fins de profilage." },
+        { "heading": "Utilisation des données", "body": "Vos informations servent uniquement à répondre à votre demande. Elles ne sont ni revendues, ni cédées à des tiers." },
+        { "heading": "Vos droits", "body": "Conformément à la réglementation applicable (dont le RGPD), vous disposez d'un droit d'accès, de rectification et de suppression. Exercez-les en écrivant à contact@onelog.io." },
+        { "heading": "Hébergement des données", "body": "Les données techniques nécessaires à l'affichage du site sont traitées par notre hébergeur, Vercel." }
+      ]
+    },
+    "terms": {
+      "title": "Conditions Générales d'Utilisation",
+      "sections": [
+        { "heading": "Objet", "body": "Les présentes conditions régissent l'utilisation du site [One]Log, à vocation informative et de présentation de nos solutions." },
+        { "heading": "Accès au site", "body": "Le site est accessible gratuitement. [One]Log s'efforce d'en assurer la disponibilité sans pouvoir être tenu responsable d'une interruption éventuelle." },
+        { "heading": "Propriété intellectuelle", "body": "La marque [One]Log, son logo et ses contenus sont protégés. Toute utilisation non autorisée engage la responsabilité de l'utilisateur." },
+        { "heading": "Responsabilité", "body": "Les informations sont fournies à titre indicatif et peuvent évoluer. Elles ne constituent pas un engagement contractuel." },
+        { "heading": "Droit applicable", "body": "Les présentes conditions sont régies par le droit applicable au siège de l'éditeur. [Juridiction compétente à préciser.]" }
+      ]
+    }
+  },
   "Footer": {
     "tagline": "L'infrastructure IA polyvalente qui transforme le quotidien en Afrique.",
     "stayHungry": "Stay Hungry.",
