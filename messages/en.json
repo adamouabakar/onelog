@@ -123,6 +123,60 @@
       }
     }
   },
+  "Solutions": {
+    "backToHome": "Home",
+    "badge": "[One]Log solution",
+    "featuresTitle": "What the AI does for you",
+    "ctaTitle": "Ready to transform your everyday life?",
+    "ctaSubtitle": "Let's talk about your needs and how [One]Log can accelerate real impact.",
+    "ctaButton": "Contact us",
+    "otherTitle": "Explore the other solutions",
+    "finance": {
+      "tagline": "Invest with the intelligence of AI.",
+      "intro": "Access markets, manage your IB partners and anticipate trends with real-time predictive analytics. Institutional precision, within everyone's reach.",
+      "features": [
+        { "title": "Predictive analytics", "description": "AI-generated market signals to act at the right moment." },
+        { "title": "Simplified IB management", "description": "Track partners, volumes and commissions from a single dashboard." },
+        { "title": "Real-time alerts", "description": "Get notified of opportunities and risks on your assets: gold, currencies, indices." }
+      ]
+    },
+    "health": {
+      "tagline": "Your health, watched over by AI.",
+      "intro": "From your prescriptions to treatment tracking and the nearest pharmacy, [One]Log orchestrates your daily care journey.",
+      "features": [
+        { "title": "Treatment tracking", "description": "Smart reminders for medication and prescription renewals." },
+        { "title": "Appointments & specialists", "description": "Find the right practitioner and book consultations without friction." },
+        { "title": "Nearby pharmacies", "description": "Locate partner pharmacies and medication availability instantly." }
+      ]
+    },
+    "agriculture": {
+      "tagline": "Grow the future with data.",
+      "intro": "Accurate weather forecasts, early disease detection and yield optimization: turn every plot into an informed decision.",
+      "features": [
+        { "title": "Local weather forecasts", "description": "Anticipate rain and drought, and plan your farm work." },
+        { "title": "Crop health", "description": "Detect disease early and receive irrigation recommendations." },
+        { "title": "Market prices", "description": "Track crop prices to sell at the best time." }
+      ]
+    },
+    "transport": {
+      "tagline": "Your logistics, streamlined.",
+      "intro": "From fleet management to route optimization, our AI cuts your delays and costs on every trip.",
+      "features": [
+        { "title": "Real-time tracking", "description": "Locate your shipments and predict arrival times accurately." },
+        { "title": "Route optimization", "description": "Routes continuously recalculated for traffic and priorities." },
+        { "title": "Fleet management", "description": "Predictive maintenance and vehicle availability at a glance." }
+      ]
+    },
+    "payments": {
+      "tagline": "Send and receive, with full confidence.",
+      "intro": "Fast, secure and transparent digital transfers, built to flow everywhere in Africa.",
+      "features": [
+        { "title": "Instant transfers", "description": "Send and receive money in seconds." },
+        { "title": "Encrypted security", "description": "Every transaction is protected end to end." },
+        { "title": "Full transparency", "description": "Clear fees and a clean history of your operations." }
+      ]
+    }
+  },
   "Stories": {
     "tag": "[One]Log changes your life",
     "title": "Real Problems, Real Solutions",

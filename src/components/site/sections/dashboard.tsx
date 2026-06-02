@@ -18,6 +18,7 @@ import {
   Wallet,
 } from "lucide-react";
 
+import { Link } from "@/i18n/navigation";
 import { CountUp } from "@/components/site/count-up";
 import { Reveal } from "@/components/site/reveal";
 import { cn } from "@/lib/utils";
@@ -77,6 +78,7 @@ function DashCard({
   content,
   cta,
   ctaClass,
+  href,
   children,
 }: {
   Icon: LucideIcon;
@@ -91,6 +93,7 @@ function DashCard({
   content: string;
   cta: string;
   ctaClass: string;
+  href: string;
   children: React.ReactNode;
 }) {
   return (
@@ -138,15 +141,15 @@ function DashCard({
         {content}
       </p>
 
-      <a
-        href="#contact"
+      <Link
+        href={href}
         className={cn(
           "mt-5 inline-flex items-center gap-1.5 text-sm font-semibold transition-all hover:gap-2.5",
           ctaClass,
         )}
       >
         {cta} <ArrowRight className="size-4" />
-      </a>
+      </Link>
     </article>
   );
 }
@@ -202,6 +205,7 @@ export async function Dashboard() {
               content={d("finance.content")}
               cta={d("finance.cta")}
               ctaClass="text-sector-finance"
+              href="/solutions/finance"
             >
               <div className="rounded-xl border border-border/70 bg-background/40 p-4">
                 <div className="flex items-end justify-between">
@@ -250,6 +254,7 @@ export async function Dashboard() {
               content={d("health.content")}
               cta={d("health.cta")}
               ctaClass="text-sector-health"
+              href="/solutions/health"
             >
               <div className="space-y-2.5">
                 <div className="flex items-center gap-3 rounded-xl border border-border/70 bg-background/40 p-3">
@@ -297,6 +302,7 @@ export async function Dashboard() {
               content={d("agriculture.content")}
               cta={d("agriculture.cta")}
               ctaClass="text-sector-agri"
+              href="/solutions/agriculture"
             >
               <div className="space-y-3 rounded-xl border border-border/70 bg-background/40 p-4">
                 <div>
@@ -341,6 +347,7 @@ export async function Dashboard() {
               content={d("transport.content")}
               cta={d("transport.cta")}
               ctaClass="text-sector-transport"
+              href="/solutions/transport"
             >
               <div className="space-y-3 rounded-xl border border-border/70 bg-background/40 p-4">
                 <div className="flex items-center justify-between text-xs">
@@ -378,6 +385,7 @@ export async function Dashboard() {
               content={d("payments.content")}
               cta={d("payments.cta")}
               ctaClass="text-sector-pay"
+              href="/solutions/payments"
             >
               <div className="rounded-xl border border-border/70 bg-background/40 p-4">
                 <p className="text-xs text-muted-foreground">

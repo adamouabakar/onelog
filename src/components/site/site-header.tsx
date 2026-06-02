@@ -10,9 +10,9 @@ import { MobileNav } from "@/components/site/mobile-nav";
 export async function SiteHeader() {
   const t = await getTranslations("Nav");
   const links = [
-    { href: "#dashboard", label: t("solutions") },
-    { href: "#stories", label: t("stories") },
-    { href: "#vision", label: t("vision") },
+    { href: "/#dashboard", label: t("solutions") },
+    { href: "/#stories", label: t("stories") },
+    { href: "/#vision", label: t("vision") },
   ];
 
   return (
@@ -32,22 +32,22 @@ export async function SiteHeader() {
 
         <nav className="hidden items-center gap-1 md:flex">
           {links.map((l) => (
-            <a
+            <Link
               key={l.href}
               href={l.href}
               className="rounded-lg px-3 py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {l.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
         <div className="flex items-center gap-2.5">
           <LocaleSwitcher />
           <Button asChild size="sm" className="hidden md:inline-flex">
-            <a href="#contact">
+            <Link href="/#contact">
               {t("contact")} <ArrowRight />
-            </a>
+            </Link>
           </Button>
           <MobileNav />
         </div>

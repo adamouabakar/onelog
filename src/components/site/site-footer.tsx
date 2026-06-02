@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
+import { Link } from "@/i18n/navigation";
+
 export async function SiteFooter() {
   const t = await getTranslations("Footer");
   const d = await getTranslations("Dashboard");
@@ -16,11 +18,11 @@ export async function SiteFooter() {
   ] as const;
 
   const company = [
-    { key: "home", href: "#" },
-    { key: "about", href: "#vision" },
+    { key: "home", href: "/" },
+    { key: "about", href: "/#vision" },
     { key: "careers", href: "#" },
     { key: "blog", href: "#" },
-    { key: "contact", href: "#contact" },
+    { key: "contact", href: "/#contact" },
   ] as const;
 
   const legal = [
@@ -74,12 +76,12 @@ export async function SiteFooter() {
             <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
               {sectors.map((s) => (
                 <li key={s}>
-                  <a
-                    href="#dashboard"
+                  <Link
+                    href={`/solutions/${s}`}
                     className="transition-colors hover:text-primary"
                   >
                     {d(`${s}.name`)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -90,9 +92,18 @@ export async function SiteFooter() {
             <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
               {company.map(({ key, href }) => (
                 <li key={key}>
-                  <a href={href} className="transition-colors hover:text-primary">
-                    {t(`links.${key}`)}
-                  </a>
+                  {href.startsWith("/") ? (
+                    <Link
+                      href={href}
+                      className="transition-colors hover:text-primary"
+                    >
+                      {t(`links.${key}`)}
+                    </Link>
+                  ) : (
+                    <a href={href} className="transition-colors hover:text-primary">
+                      {t(`links.${key}`)}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
