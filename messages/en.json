@@ -239,6 +239,40 @@
     "secondary": "Join the Adventure",
     "email": "contact@onelog.io"
   },
+  "Legal": {
+    "backToHome": "Home",
+    "updated": "Last updated",
+    "legal-notice": {
+      "title": "Legal Notice",
+      "sections": [
+        { "heading": "Publisher", "body": "This website is published by [One]Log. For any question, write to us at contact@onelog.io." },
+        { "heading": "Publication director", "body": "[To be completed — name of the publication director.]" },
+        { "heading": "Hosting", "body": "The site is hosted by Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA (vercel.com)." },
+        { "heading": "Intellectual property", "body": "All content — text, visuals, logo and code — is the property of [One]Log unless otherwise stated. Any reproduction without prior authorization is prohibited." },
+        { "heading": "Legal details", "body": "[To be completed — company name, legal form, registered address and registration number.]" }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "sections": [
+        { "heading": "Data we collect", "body": "This showcase site collects no data without your knowledge. The only information processed is what you voluntarily send us by email." },
+        { "heading": "Cookies & trackers", "body": "The site uses neither advertising cookies nor third-party profiling trackers." },
+        { "heading": "Use of data", "body": "Your information is used solely to respond to your request. It is never sold or shared with third parties." },
+        { "heading": "Your rights", "body": "In accordance with applicable regulations (including the GDPR), you have the right to access, rectify and erase your data. Exercise them by writing to contact@onelog.io." },
+        { "heading": "Data hosting", "body": "The technical data required to display the site is processed by our host, Vercel." }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "sections": [
+        { "heading": "Purpose", "body": "These terms govern the use of the [One]Log website, which is informational and presents our solutions." },
+        { "heading": "Access", "body": "The site is freely accessible. [One]Log strives to keep it available but cannot be held liable for any interruption." },
+        { "heading": "Intellectual property", "body": "The [One]Log brand, its logo and its content are protected. Any unauthorized use engages the user's liability." },
+        { "heading": "Liability", "body": "Information is provided for guidance only and may change. It does not constitute a contractual commitment." },
+        { "heading": "Governing law", "body": "These terms are governed by the law applicable at the publisher's registered office. [Competent jurisdiction to be specified.]" }
+      ]
+    }
+  },
   "Footer": {
     "tagline": "The versatile AI infrastructure transforming everyday life in Africa.",
     "stayHungry": "Stay Hungry.",

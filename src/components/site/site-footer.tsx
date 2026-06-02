@@ -26,9 +26,9 @@ export async function SiteFooter() {
   ] as const;
 
   const legal = [
-    { key: "legalNotice", href: "#" },
-    { key: "privacy", href: "#" },
-    { key: "terms", href: "#" },
+    { key: "legalNotice", href: "/legal/legal-notice" },
+    { key: "privacy", href: "/legal/privacy" },
+    { key: "terms", href: "/legal/terms" },
   ] as const;
 
   const socials = [
@@ -114,9 +114,9 @@ export async function SiteFooter() {
             <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
               {legal.map(({ key, href }) => (
                 <li key={key}>
-                  <a href={href} className="transition-colors hover:text-primary">
+                  <Link href={href} className="transition-colors hover:text-primary">
                     {t(`links.${key}`)}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
