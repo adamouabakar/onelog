@@ -126,3 +126,8 @@
     stroke-dashoffset: 0;
   }
 }
+
+/* FAQ — rotation du chevron à l'ouverture du <details> */
+details.faq-item[open] .faq-chevron {
+  transform: rotate(180deg);
+}

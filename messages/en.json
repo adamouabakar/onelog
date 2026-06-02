@@ -273,6 +273,60 @@
       ]
     }
   },
+  "Faq": {
+    "tag": "Frequently asked questions",
+    "title": "Everything you need to know",
+    "subtitle": "Answers to the most common questions about [One]Log.",
+    "items": [
+      { "q": "What is [One]Log?", "a": "A pan-African AI infrastructure that brings five essential sectors — finance & trading, health, agriculture, transport and transactions — into a single platform." },
+      { "q": "Which countries is [One]Log available in?", "a": "Our ambition is pan-African. Rollout is gradual: contact us to find out availability in your country." },
+      { "q": "How is artificial intelligence used?", "a": "It continuously analyzes your sector data to generate decisions, alerts and optimizations in real time." },
+      { "q": "Is my data secure?", "a": "Security and privacy are at the heart of [One]Log. Transactions are encrypted and your data is never sold." },
+      { "q": "Is [One]Log for individuals or businesses?", "a": "Both. Farmer, patient, trader, merchant or company: [One]Log adapts its solutions to your everyday life." },
+      { "q": "How do I get started?", "a": "Write to us via the contact form or at contact@onelog.io. We'll get back to you quickly." }
+    ]
+  },
+  "About": {
+    "badge": "About [One]Log",
+    "title": "Building Africa's future, together",
+    "intro": "[One]Log was born from one conviction: artificial intelligence can tangibly transform the daily lives of millions of Africans by bringing essential services into a single platform.",
+    "missionTitle": "Our mission",
+    "missionBody": "To democratize access to world-class AI tools — for finance, health, agriculture, transport and payments — and put them to work for real, measurable impact on the ground.",
+    "visionTitle": "Our vision",
+    "visionBody": "To become the continent's leading versatile infrastructure: one AI, all your sectors, for a prosperous and united future.",
+    "valuesTitle": "Our values",
+    "values": [
+      { "title": "Hungry for impact", "description": "Every solution must improve a real life." },
+      { "title": "Stronger together", "description": "Solidarity and local talent at the core of the project." },
+      { "title": "Relentless performance", "description": "World-class, designed for Africa." }
+    ],
+    "cta": "Join the adventure"
+  },
+  "Careers": {
+    "badge": "Careers",
+    "title": "Build Africa's AI with us",
+    "intro": "We're looking for minds hungry for impact, ready to solve real problems at scale. If the \"Stay Hungry\" culture speaks to you, let's talk.",
+    "openTitle": "Open positions",
+    "openBody": "No openings posted at the moment. We welcome spontaneous applications all year round.",
+    "spontaneousTitle": "Spontaneous application",
+    "spontaneousBody": "Send us your profile and tell us what you'd love to build. The best opportunities often start with initiative.",
+    "cta": "Apply by email"
+  },
+  "Blog": {
+    "badge": "Blog",
+    "title": "The [One]Log Blog",
+    "subtitle": "AI insights, stories and innovation for Africa. Coming soon.",
+    "soonTitle": "Coming soon",
+    "soonBody": "We're preparing articles on AI applied to finance, health, agriculture, logistics and payments. Check back soon.",
+    "topicsTitle": "On the agenda",
+    "topics": [
+      "AI & financial inclusion in Africa",
+      "Health augmented by data",
+      "Precision agriculture for smallholders",
+      "Smart logistics and African corridors"
+    ],
+    "cta": "Get notified at launch"
+  },
   "Footer": {
     "tagline": "The versatile AI infrastructure transforming everyday life in Africa.",
     "stayHungry": "Stay Hungry.",

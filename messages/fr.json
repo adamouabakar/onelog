@@ -273,6 +273,60 @@
       ]
     }
   },
+  "Faq": {
+    "tag": "Questions fréquentes",
+    "title": "Tout ce que vous devez savoir",
+    "subtitle": "Les réponses aux questions les plus courantes sur [One]Log.",
+    "items": [
+      { "q": "Qu'est-ce que [One]Log ?", "a": "Une infrastructure d'IA panafricaine qui réunit cinq secteurs essentiels — finance & trading, santé, agriculture, transport et transactions — dans une seule plateforme." },
+      { "q": "Dans quels pays [One]Log est-il disponible ?", "a": "Notre ambition est panafricaine. Le déploiement est progressif : contactez-nous pour connaître la disponibilité dans votre pays." },
+      { "q": "Comment l'intelligence artificielle est-elle utilisée ?", "a": "Elle analyse en continu les données de vos secteurs pour générer des décisions, des alertes et des optimisations en temps réel." },
+      { "q": "Mes données sont-elles sécurisées ?", "a": "La sécurité et la confidentialité sont au cœur de [One]Log. Les transactions sont chiffrées et vos données ne sont jamais revendues." },
+      { "q": "[One]Log s'adresse-t-il aux particuliers ou aux entreprises ?", "a": "Aux deux. Agriculteur, patient, trader, commerçant ou entreprise : [One]Log adapte ses solutions à votre quotidien." },
+      { "q": "Comment commencer ?", "a": "Écrivez-nous via le formulaire de contact ou à contact@onelog.io. Nous revenons vers vous rapidement." }
+    ]
+  },
+  "About": {
+    "badge": "À propos de [One]Log",
+    "title": "Bâtir l'avenir de l'Afrique, ensemble",
+    "intro": "[One]Log est née d'une conviction : l'intelligence artificielle peut transformer concrètement le quotidien de millions d'Africains, en réunissant les services essentiels dans une seule plateforme.",
+    "missionTitle": "Notre mission",
+    "missionBody": "Démocratiser l'accès à des outils d'IA de niveau mondial — pour la finance, la santé, l'agriculture, le transport et les paiements — et les mettre au service d'un impact réel et mesurable sur le terrain.",
+    "visionTitle": "Notre vision",
+    "visionBody": "Devenir l'infrastructure polyvalente de référence du continent : une seule IA, tous vos secteurs, au bénéfice d'un avenir prospère et solidaire.",
+    "valuesTitle": "Nos valeurs",
+    "values": [
+      { "title": "Affamés d'impact", "description": "Chaque solution doit améliorer une vie réelle." },
+      { "title": "Plus forts ensemble", "description": "Solidarité et talent local au cœur du projet." },
+      { "title": "Performance absolue", "description": "Niveau mondial, pensé pour l'Afrique." }
+    ],
+    "cta": "Rejoindre l'aventure"
+  },
+  "Careers": {
+    "badge": "Carrières",
+    "title": "Construisez l'IA de l'Afrique avec nous",
+    "intro": "Nous recherchons des esprits affamés d'impact, prêts à résoudre des problèmes concrets à grande échelle. Si la culture « Stay Hungry » vous parle, parlons-nous.",
+    "openTitle": "Postes ouverts",
+    "openBody": "Aucune offre publiée pour le moment. Nous accueillons les candidatures spontanées toute l'année.",
+    "spontaneousTitle": "Candidature spontanée",
+    "spontaneousBody": "Envoyez votre profil et dites-nous ce que vous aimeriez bâtir. Les meilleures opportunités naissent souvent d'une initiative.",
+    "cta": "Postuler par e-mail"
+  },
+  "Blog": {
+    "badge": "Blog",
+    "title": "Le Blog [One]Log",
+    "subtitle": "Analyses, histoires et innovations IA au service de l'Afrique. Bientôt en ligne.",
+    "soonTitle": "Bientôt disponible",
+    "soonBody": "Nous préparons des articles sur l'IA appliquée à la finance, la santé, l'agriculture, la logistique et les paiements. Revenez vite.",
+    "topicsTitle": "Au programme",
+    "topics": [
+      "IA & inclusion financière en Afrique",
+      "La santé augmentée par la donnée",
+      "Agriculture de précision pour petits exploitants",
+      "Logistique intelligente et corridors africains"
+    ],
+    "cta": "Être informé du lancement"
+  },
   "Footer": {
     "tagline": "L'infrastructure IA polyvalente qui transforme le quotidien en Afrique.",
     "stayHungry": "Stay Hungry.",
