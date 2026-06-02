@@ -327,6 +327,27 @@
     ],
     "cta": "Être informé du lancement"
   },
+  "ContactForm": {
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "sector": "Secteur concerné",
+    "sectorPlaceholder": "Sélectionnez un secteur",
+    "other": "Autre",
+    "message": "Message",
+    "messagePlaceholder": "Parlez-nous de votre besoin…",
+    "send": "Envoyer le message",
+    "sending": "Envoi…",
+    "success": "Merci ! Votre message a bien été envoyé. Nous revenons vers vous très vite.",
+    "orEmail": "ou écrivez-nous directement à",
+    "errors": {
+      "missing": "Merci de remplir tous les champs obligatoires.",
+      "email": "Adresse e-mail invalide.",
+      "not_configured": "L'envoi par formulaire n'est pas encore activé. Écrivez-nous directement par e-mail.",
+      "send_failed": "Une erreur est survenue. Réessayez ou écrivez-nous par e-mail."
+    }
+  },
   "Footer": {
     "tagline": "L'infrastructure IA polyvalente qui transforme le quotidien en Afrique.",
     "stayHungry": "Stay Hungry.",

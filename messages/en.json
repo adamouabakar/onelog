@@ -327,6 +327,27 @@
     ],
     "cta": "Get notified at launch"
   },
+  "ContactForm": {
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "sector": "Sector",
+    "sectorPlaceholder": "Select a sector",
+    "other": "Other",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your needs…",
+    "send": "Send message",
+    "sending": "Sending…",
+    "success": "Thank you! Your message has been sent. We'll get back to you very soon.",
+    "orEmail": "or write to us directly at",
+    "errors": {
+      "missing": "Please fill in all required fields.",
+      "email": "Invalid email address.",
+      "not_configured": "Form sending isn't enabled yet. Please write to us directly by email.",
+      "send_failed": "Something went wrong. Try again or email us."
+    }
+  },
   "Footer": {
     "tagline": "The versatile AI infrastructure transforming everyday life in Africa.",
     "stayHungry": "Stay Hungry.",
