@@ -4,6 +4,7 @@ import { routing } from "@/i18n/routing";
 
 const SECTORS = ["finance", "health", "agriculture", "transport", "payments"];
 const LEGAL = ["legal-notice", "privacy", "terms"];
+const PAGES = ["about", "careers", "blog"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://onelog.io";
@@ -31,6 +32,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: "yearly",
         priority: 0.3,
+      });
+    }
+    for (const page of PAGES) {
+      entries.push({
+        url: `${base}/${locale}/${page}`,
+        lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.6,
       });
     }
   }

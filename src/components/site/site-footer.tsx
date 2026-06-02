@@ -19,9 +19,9 @@ export async function SiteFooter() {
 
   const company = [
     { key: "home", href: "/" },
-    { key: "about", href: "/#vision" },
-    { key: "careers", href: "#" },
-    { key: "blog", href: "#" },
+    { key: "about", href: "/about" },
+    { key: "careers", href: "/careers" },
+    { key: "blog", href: "/blog" },
     { key: "contact", href: "/#contact" },
   ] as const;
 
