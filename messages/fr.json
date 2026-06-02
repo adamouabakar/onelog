@@ -123,6 +123,60 @@
       }
     }
   },
+  "Solutions": {
+    "backToHome": "Accueil",
+    "badge": "Solution [One]Log",
+    "featuresTitle": "Ce que l'IA fait pour vous",
+    "ctaTitle": "Prêt à transformer votre quotidien ?",
+    "ctaSubtitle": "Parlons de votre besoin et de la manière dont [One]Log peut accélérer un impact réel.",
+    "ctaButton": "Nous contacter",
+    "otherTitle": "Explorer les autres solutions",
+    "finance": {
+      "tagline": "Investissez avec l'intelligence de l'IA.",
+      "intro": "Accédez aux marchés, pilotez vos partenaires IB et anticipez les tendances grâce à des analyses prédictives en temps réel. La précision institutionnelle, à portée de tous.",
+      "features": [
+        { "title": "Analyses prédictives", "description": "Des signaux de marché générés par l'IA pour décider au bon moment." },
+        { "title": "Gestion IB simplifiée", "description": "Suivez partenaires, volumes et commissions depuis un tableau de bord unique." },
+        { "title": "Alertes en temps réel", "description": "Soyez notifié des opportunités et des risques sur vos actifs : or, devises, indices." }
+      ]
+    },
+    "health": {
+      "tagline": "Votre santé, veillée par l'IA.",
+      "intro": "De vos ordonnances au suivi de vos traitements, jusqu'à la pharmacie la plus proche, [One]Log orchestre votre parcours de soin au quotidien.",
+      "features": [
+        { "title": "Suivi des traitements", "description": "Rappels intelligents de prise de médicaments et de renouvellement d'ordonnance." },
+        { "title": "Rendez-vous & spécialistes", "description": "Trouvez le bon praticien et planifiez vos consultations sans friction." },
+        { "title": "Pharmacies à proximité", "description": "Localisez les pharmacies partenaires et la disponibilité des médicaments." }
+      ]
+    },
+    "agriculture": {
+      "tagline": "Cultivez l'avenir avec la donnée.",
+      "intro": "Prévisions météo précises, détection précoce des maladies et optimisation des rendements : transformez chaque parcelle en décision éclairée.",
+      "features": [
+        { "title": "Prévisions météo locales", "description": "Anticipez pluie et sécheresse, planifiez vos travaux agricoles." },
+        { "title": "Santé des cultures", "description": "Détectez tôt les maladies et recevez des recommandations d'irrigation." },
+        { "title": "Prix du marché", "description": "Suivez les cours des récoltes pour vendre au meilleur moment." }
+      ]
+    },
+    "transport": {
+      "tagline": "Votre logistique, fluidifiée.",
+      "intro": "De la gestion de flotte à l'optimisation d'itinéraires, notre IA réduit vos délais et vos coûts à chaque trajet.",
+      "features": [
+        { "title": "Suivi en temps réel", "description": "Localisez vos expéditions et anticipez les heures d'arrivée avec précision." },
+        { "title": "Optimisation d'itinéraires", "description": "Des trajets recalculés en continu selon le trafic et les priorités." },
+        { "title": "Gestion de flotte", "description": "Maintenance prédictive et disponibilité des véhicules en un coup d'œil." }
+      ]
+    },
+    "payments": {
+      "tagline": "Envoyez, recevez, en toute confiance.",
+      "intro": "Des transferts numériques rapides, sécurisés et transparents, conçus pour circuler partout en Afrique.",
+      "features": [
+        { "title": "Transferts instantanés", "description": "Envoyez et recevez de l'argent en quelques secondes." },
+        { "title": "Sécurité chiffrée", "description": "Chaque transaction est protégée de bout en bout." },
+        { "title": "Transparence totale", "description": "Des frais clairs et un historique limpide de vos opérations." }
+      ]
+    }
+  },
   "Stories": {
     "tag": "[One]Log change votre vie",
     "title": "Des Problèmes Concrets, des Solutions Concrètes",

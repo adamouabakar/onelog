@@ -5,15 +5,17 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
 
+import { Link } from "@/i18n/navigation";
+
 /** Menu de navigation mobile (hamburger → panneau déroulant). */
 export function MobileNav() {
   const t = useTranslations("Nav");
   const [open, setOpen] = useState(false);
 
   const links = [
-    { href: "#dashboard", label: t("solutions") },
-    { href: "#stories", label: t("stories") },
-    { href: "#vision", label: t("vision") },
+    { href: "/#dashboard", label: t("solutions") },
+    { href: "/#stories", label: t("stories") },
+    { href: "/#vision", label: t("vision") },
   ];
 
   // Verrouille le défilement de l'arrière-plan quand le menu est ouvert
@@ -48,22 +50,22 @@ export function MobileNav() {
           >
             <nav className="container flex flex-col gap-1 py-4">
               {links.map((l) => (
-                <a
+                <Link
                   key={l.href}
                   href={l.href}
                   onClick={() => setOpen(false)}
                   className="rounded-lg px-3 py-3 text-sm font-medium text-foreground/90 transition-colors hover:bg-card hover:text-primary"
                 >
                   {l.label}
-                </a>
+                </Link>
               ))}
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground shadow-glow"
               >
                 {t("contact")} <ArrowRight className="size-4" />
-              </a>
+              </Link>
             </nav>
           </motion.div>
         )}
