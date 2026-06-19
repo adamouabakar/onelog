@@ -12,7 +12,8 @@
     "openMenu": "Ouvrir le menu",
     "closeMenu": "Fermer le menu",
     "skipToContent": "Aller au contenu principal",
-    "language": "Langue"
+    "language": "Langue",
+    "whatsapp": "Contacter [One]Log sur WhatsApp"
   },
   "Hero": {
     "badge": "Infrastructure IA panafricaine",
@@ -22,8 +23,10 @@
     "titleAfrica": "Afrique",
     "titleC": ".",
     "subtitle": "Une seule plateforme pour vos finances, votre santé, votre croissance et votre mobilité. [One]Log : l'avenir de l'Afrique, aujourd'hui.",
-    "ctaPrimary": "Découvrir [One]Log",
-    "ctaSecondary": "Nous contacter",
+    "ctaPrimary": "Rejoindre la liste d'attente",
+    "ctaSecondary": "Explorer le Dashboard",
+    "ctaTertiary": "Télécharger le deck investisseur",
+    "deckTrust": "PDF · ~2 Mo · Mis à jour juin 2026",
     "logoAlt": "[One]Log — visualisation de l'IA"
   },
   "Hub": {
@@ -344,9 +347,35 @@
     "errors": {
       "missing": "Merci de remplir tous les champs obligatoires.",
       "email": "Adresse e-mail invalide.",
+      "too_long": "Le message dépasse la limite autorisée.",
+      "invalid_sector": "Secteur invalide.",
       "not_configured": "L'envoi par formulaire n'est pas encore activé. Écrivez-nous directement par e-mail.",
       "send_failed": "Une erreur est survenue. Réessayez ou écrivez-nous par e-mail."
     }
+  },
+  "WaitlistForm": {
+    "title": "Liste d'attente",
+    "subtitle": "Soyez parmi les premiers informés pour {sector}.",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@exemple.com",
+    "submit": "Rejoindre la liste",
+    "sending": "Inscription…",
+    "success": "Merci ! Vous êtes inscrit(e) sur la liste d'attente.",
+    "errors": {
+      "missing": "Merci de remplir tous les champs obligatoires.",
+      "email": "Adresse e-mail invalide.",
+      "invalid_sector": "Secteur invalide.",
+      "not_configured": "L'inscription n'est pas encore activée. Contactez-nous par e-mail.",
+      "send_failed": "Une erreur est survenue. Réessayez plus tard."
+    }
+  },
+  "Deck": {
+    "title": "Deck investisseur",
+    "description": "Découvrez la vision [One]Log, notre approche polyvalente et notre feuille de route.",
+    "download": "Télécharger le PDF",
+    "trust": "PDF · ~2 Mo · Mis à jour juin 2026"
   },
   "Footer": {
     "tagline": "L'infrastructure IA polyvalente qui transforme le quotidien en Afrique.",
@@ -364,6 +393,7 @@
       "careers": "Carrières",
       "blog": "Blog",
       "contact": "Contact",
+      "deck": "Deck investisseur",
       "legalNotice": "Mentions Légales",
       "privacy": "Politique de Confidentialité",
       "terms": "Conditions Générales"

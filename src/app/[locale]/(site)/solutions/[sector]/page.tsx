@@ -16,10 +16,11 @@ import {
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/reveal";
+import { WaitlistForm } from "@/components/site/waitlist-form";
+import { SECTOR_KEYS, type SectorKey } from "@/lib/sectors";
 import { cn } from "@/lib/utils";
 
-const SECTORS = ["finance", "health", "agriculture", "transport", "payments"] as const;
-type SectorKey = (typeof SECTORS)[number];
+const SECTORS = SECTOR_KEYS;
 
 type Theme = {
   Icon: LucideIcon;
@@ -171,9 +172,9 @@ export default async function SectorPage({
               <Reveal delay={0.18}>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Button asChild size="lg">
-                    <Link href="/#contact">
+                    <a href="#waitlist">
                       {s("ctaButton")} <ArrowRight />
-                    </Link>
+                    </a>
                   </Button>
                   <Button asChild size="lg" variant="outline">
                     <a href="#features">{d(`${sector}.cta`)}</a>
@@ -243,6 +244,15 @@ export default async function SectorPage({
         </div>
       </section>
 
+      {/* Waitlist */}
+      <section id="waitlist" className="scroll-mt-24 py-14 md:py-20">
+        <div className="container max-w-xl">
+          <Reveal>
+            <WaitlistForm sector={sector} borderClass={theme.border} />
+          </Reveal>
+        </div>
+      </section>
+
       {/* CTA + autres solutions */}
       <section className="pb-20 md:pb-28">
         <div className="container">
@@ -261,9 +271,9 @@ export default async function SectorPage({
                 </p>
                 <div className="mt-7 flex justify-center">
                   <Button asChild size="lg">
-                    <Link href="/#contact">
+                    <a href="#waitlist">
                       {s("ctaButton")} <ArrowRight />
-                    </Link>
+                    </a>
                   </Button>
                 </div>
               </div>

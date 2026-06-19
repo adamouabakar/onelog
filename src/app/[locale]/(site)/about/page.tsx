@@ -1,6 +1,15 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ArrowRight, Flame, Gauge, HeartHandshake, type LucideIcon, Rocket, Target } from "lucide-react";
+import {
+  ArrowRight,
+  Download,
+  Flame,
+  Gauge,
+  HeartHandshake,
+  type LucideIcon,
+  Rocket,
+  Target,
+} from "lucide-react";
 
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
@@ -33,6 +42,7 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("About");
+  const deck = await getTranslations("Deck");
   const values = t.raw("values") as { title: string; description: string }[];
 
   return (
@@ -75,6 +85,26 @@ export default async function AboutPage({
               </span>
               <h2 className="mt-4 font-display text-xl font-semibold">{t("visionTitle")}</h2>
               <p className="mt-2 leading-relaxed text-muted-foreground">{t("visionBody")}</p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* DECK */}
+      <section className="py-10 md:py-14">
+        <div className="container max-w-2xl">
+          <Reveal>
+            <div className="rounded-2xl border border-border bg-card p-8 text-center md:p-10">
+              <h2 className="font-display text-2xl font-bold tracking-tight">{deck("title")}</h2>
+              <p className="mx-auto mt-3 max-w-lg text-sm text-muted-foreground">{deck("description")}</p>
+              <p className="mt-2 text-xs text-muted-foreground/80">{deck("trust")}</p>
+              <div className="mt-6">
+                <Button asChild size="lg" variant="outline">
+                  <a href="/deck/onelog-deck.pdf" download>
+                    <Download className="size-4" /> {deck("download")}
+                  </a>
+                </Button>
+              </div>
             </div>
           </Reveal>
         </div>

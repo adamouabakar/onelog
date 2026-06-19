@@ -115,7 +115,7 @@ export default async function LocaleLayout({
         "@id": "https://onelog.io/#organization",
         name: "[One]Log",
         url: "https://onelog.io",
-        logo: "https://onelog.io/onelog-logo.jpg",
+        logo: "https://onelog.io/onelog-logo.svg",
         description: tMeta("description"),
         slogan: "Stay Hungry.",
         areaServed: "Africa",

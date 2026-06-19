@@ -22,6 +22,7 @@ export async function SiteFooter() {
     { key: "about", href: "/about" },
     { key: "careers", href: "/careers" },
     { key: "blog", href: "/blog" },
+    { key: "deck", href: "/deck/onelog-deck.pdf", external: true },
     { key: "contact", href: "/#contact" },
   ] as const;
 
@@ -90,9 +91,18 @@ export async function SiteFooter() {
           <div>
             <h3 className="text-sm font-semibold">{t("cols.company")}</h3>
             <ul className="mt-4 space-y-2.5 text-sm text-muted-foreground">
-              {company.map(({ key, href }) => (
+              {company.map(({ key, href, ...rest }) => (
                 <li key={key}>
-                  {href.startsWith("/") ? (
+                  {"external" in rest && rest.external ? (
+                    <a
+                      href={href}
+                      className="transition-colors hover:text-primary"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {t(`links.${key}`)}
+                    </a>
+                  ) : href.startsWith("/") ? (
                     <Link
                       href={href}
                       className="transition-colors hover:text-primary"

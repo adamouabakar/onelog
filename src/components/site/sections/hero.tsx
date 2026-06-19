@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Download, Sparkles } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/reveal";
@@ -10,7 +10,6 @@ export async function Hero() {
 
   return (
     <section className="relative overflow-hidden">
-      {/* Fond : ciel étoilé (rappel du logo) + halo bleu */}
       <div aria-hidden className="pointer-events-none absolute inset-0 starfield opacity-70" />
       <div aria-hidden className="pointer-events-none absolute inset-0 bg-radial-glow" />
       <div
@@ -43,20 +42,29 @@ export async function Hero() {
           </Reveal>
 
           <Reveal delay={0.18}>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild size="lg">
-                <a href="#dashboard">
+                <a href="#contact">
                   {t("ctaPrimary")} <ArrowRight />
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="#contact">{t("ctaSecondary")}</a>
+                <a href="#dashboard">{t("ctaSecondary")}</a>
               </Button>
             </div>
+            <p className="mt-4">
+              <a
+                href="/deck/onelog-deck.pdf"
+                className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
+              >
+                <Download className="size-4" />
+                {t("ctaTertiary")}
+                <span className="text-xs text-muted-foreground/80">· {t("deckTrust")}</span>
+              </a>
+            </p>
           </Reveal>
         </div>
 
-        {/* Visualisation IA = logo officiel (réseau neuronal néon) */}
         <Reveal delay={0.1} className="relative flex justify-center lg:justify-end">
           <div
             aria-hidden
@@ -64,10 +72,10 @@ export async function Hero() {
           />
           <div className="animate-float">
             <Image
-              src="/onelog-logo.jpg"
+              src="/onelog-logo.svg"
               alt={t("logoAlt")}
-              width={928}
-              height={1104}
+              width={480}
+              height={480}
               priority
               sizes="(max-width: 1024px) 70vw, 480px"
               className="h-auto w-[min(78vw,460px)] select-none [mask-image:radial-gradient(72%_72%_at_50%_45%,black_58%,transparent_100%)]"

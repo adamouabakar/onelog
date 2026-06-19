@@ -1,16 +1,14 @@
 "use client";
 
-import { useActionState } from "react";
-import { useTranslations } from "next-intl";
+import { useActionState, useEffect } from "react";
+import { useLocale, useTranslations } from "next-intl";
 import { ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 
-import { sendContact } from "@/app/actions/contact";
+import { sendContact, type ContactState } from "@/app/actions/contact";
+import { SECTOR_KEYS } from "@/lib/sectors";
 import { cn } from "@/lib/utils";
 
-type ContactState = { ok: boolean; error?: string };
 const initial: ContactState = { ok: false };
-
-const SECTORS = ["finance", "health", "agriculture", "transport", "payments"] as const;
 
 const inputCls =
   "w-full rounded-lg border border-border bg-background/60 px-3.5 py-2.5 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-primary/60 focus:ring-2 focus:ring-primary/20";
@@ -24,10 +22,23 @@ function Field({ label, children }: { label: string; children: React.ReactNode }
   );
 }
 
+function trackPlausible(event: string, props?: Record<string, string>) {
+  if (typeof window === "undefined") return;
+  const plausible = (window as Window & { plausible?: (e: string, o?: { props: Record<string, string> }) => void }).plausible;
+  plausible?.(event, props ? { props } : undefined);
+}
+
 export function ContactForm() {
+  const locale = useLocale();
   const t = useTranslations("ContactForm");
   const d = useTranslations("Dashboard");
   const [state, formAction, pending] = useActionState(sendContact, initial);
+
+  useEffect(() => {
+    if (state.ok && state.tracked) {
+      trackPlausible("Contact Submit", { locale });
+    }
+  }, [state.ok, state.tracked, locale]);
 
   if (state.ok) {
     return (
@@ -40,6 +51,16 @@ export function ContactForm() {
 
   return (
     <form action={formAction} className="space-y-4 text-left">
+      <input type="hidden" name="locale" value={locale} />
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden
+        className="absolute left-[-9999px] h-px w-px opacity-0"
+      />
+
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label={t("name")}>
           <input
@@ -67,12 +88,12 @@ export function ContactForm() {
           <option value="" disabled>
             {t("sectorPlaceholder")}
           </option>
-          {SECTORS.map((s) => (
-            <option key={s} value={d(`${s}.name`)}>
+          {SECTOR_KEYS.map((s) => (
+            <option key={s} value={s}>
               {d(`${s}.name`)}
             </option>
           ))}
-          <option value={t("other")}>{t("other")}</option>
+          <option value="other">{t("other")}</option>
         </select>
       </Field>
 
