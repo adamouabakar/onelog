@@ -1,0 +1,7 @@
+---
+pid: 4700
+cwd: "C:\~\Projects\onelog"
+command: "npm run dev"
+started_at: 2026-06-19T02:21:11.001Z
+running_for_ms: 1120001  
+---
