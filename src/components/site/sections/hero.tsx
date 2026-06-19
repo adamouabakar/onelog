@@ -1,7 +1,8 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { ArrowRight, Download, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles } from "lucide-react";
 
+import { DeckLink } from "@/components/site/deck-link";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/reveal";
 
@@ -19,13 +20,13 @@ export async function Hero() {
 
       <div className="container relative grid items-center gap-10 py-20 md:py-28 lg:grid-cols-[1.05fr_0.95fr]">
         <div>
-          <Reveal>
+          <Reveal eager>
             <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs font-medium text-muted-foreground">
               <Sparkles className="size-3.5 text-primary" /> {t("badge")}
             </span>
           </Reveal>
 
-          <Reveal delay={0.06}>
+          <Reveal eager delay={0.06}>
             <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.04] tracking-tight text-balance sm:text-5xl lg:text-[3.75rem]">
               {t("titleA")}
               <span className="text-gradient">{t("titleAI")}</span>
@@ -35,13 +36,13 @@ export async function Hero() {
             </h1>
           </Reveal>
 
-          <Reveal delay={0.12}>
+          <Reveal eager delay={0.12}>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-brand-silver sm:text-lg">
               {t("subtitle")}
             </p>
           </Reveal>
 
-          <Reveal delay={0.18}>
+          <Reveal eager delay={0.18}>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button asChild size="lg">
                 <a href="#contact">
@@ -53,19 +54,12 @@ export async function Hero() {
               </Button>
             </div>
             <p className="mt-4">
-              <a
-                href="/deck/onelog-deck.pdf"
-                className="inline-flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-primary"
-              >
-                <Download className="size-4" />
-                {t("ctaTertiary")}
-                <span className="text-xs text-muted-foreground/80">· {t("deckTrust")}</span>
-              </a>
+              <DeckLink />
             </p>
           </Reveal>
         </div>
 
-        <Reveal delay={0.1} className="relative flex justify-center lg:justify-end">
+        <Reveal eager delay={0.1} className="relative flex justify-center lg:justify-end">
           <div
             aria-hidden
             className="pointer-events-none absolute left-1/2 top-1/2 -z-10 size-[120%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-radial-glow blur-2xl"

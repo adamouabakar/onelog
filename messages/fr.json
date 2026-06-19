@@ -27,6 +27,7 @@
     "ctaSecondary": "Explorer le Dashboard",
     "ctaTertiary": "Télécharger le deck investisseur",
     "deckTrust": "PDF · ~2 Mo · Mis à jour juin 2026",
+    "unavailable": "Deck investisseur — bientôt disponible",
     "logoAlt": "[One]Log — visualisation de l'IA"
   },
   "Hub": {
@@ -375,7 +376,8 @@
     "title": "Deck investisseur",
     "description": "Découvrez la vision [One]Log, notre approche polyvalente et notre feuille de route.",
     "download": "Télécharger le PDF",
-    "trust": "PDF · ~2 Mo · Mis à jour juin 2026"
+    "trust": "PDF · ~2 Mo · Mis à jour juin 2026",
+    "unavailable": "Le deck sera publié prochainement. Écrivez-nous à contact@onelog.io pour le recevoir."
   },
   "Footer": {
     "tagline": "L'infrastructure IA polyvalente qui transforme le quotidien en Afrique.",

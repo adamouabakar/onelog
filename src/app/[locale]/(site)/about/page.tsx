@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   ArrowRight,
-  Download,
   Flame,
   Gauge,
   HeartHandshake,
@@ -11,6 +10,7 @@ import {
   Target,
 } from "lucide-react";
 
+import { DeckLink } from "@/components/site/deck-link";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/reveal";
@@ -99,11 +99,7 @@ export default async function AboutPage({
               <p className="mx-auto mt-3 max-w-lg text-sm text-muted-foreground">{deck("description")}</p>
               <p className="mt-2 text-xs text-muted-foreground/80">{deck("trust")}</p>
               <div className="mt-6">
-                <Button asChild size="lg" variant="outline">
-                  <a href="/deck/onelog-deck.pdf" download>
-                    <Download className="size-4" /> {deck("download")}
-                  </a>
-                </Button>
+                <DeckLink namespace="Deck" variant="button" />
               </div>
             </div>
           </Reveal>

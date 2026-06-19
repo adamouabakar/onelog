@@ -32,7 +32,7 @@ export function LocaleSwitcher() {
               startTransition(() => router.replace(pathname, { locale: loc }))
             }
             className={cn(
-              "rounded-full px-2.5 py-1 text-xs font-semibold uppercase transition-colors",
+              "min-h-11 min-w-11 rounded-full px-3 py-2 text-xs font-semibold uppercase transition-colors",
               active
                 ? "bg-primary text-primary-foreground"
                 : "text-muted-foreground hover:text-foreground",

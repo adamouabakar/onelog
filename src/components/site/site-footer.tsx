@@ -1,8 +1,8 @@
 import Image from "next/image";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 
 import { Link } from "@/i18n/navigation";
+import { DECK_HREF, isDeckAvailable } from "@/lib/deck";
 
 export async function SiteFooter() {
   const t = await getTranslations("Footer");
@@ -22,7 +22,9 @@ export async function SiteFooter() {
     { key: "about", href: "/about" },
     { key: "careers", href: "/careers" },
     { key: "blog", href: "/blog" },
-    { key: "deck", href: "/deck/onelog-deck.pdf", external: true },
+    ...(isDeckAvailable()
+      ? [{ key: "deck" as const, href: DECK_HREF, external: true as const }]
+      : []),
     { key: "contact", href: "/#contact" },
   ] as const;
 
@@ -31,13 +33,6 @@ export async function SiteFooter() {
     { key: "privacy", href: "/legal/privacy" },
     { key: "terms", href: "/legal/terms" },
   ] as const;
-
-  const socials = [
-    { Icon: Linkedin, label: "LinkedIn" },
-    { Icon: Twitter, label: "Twitter" },
-    { Icon: Facebook, label: "Facebook" },
-    { Icon: Instagram, label: "Instagram" },
-  ];
 
   return (
     <footer className="border-t border-border bg-brand-surface/40">
@@ -58,18 +53,6 @@ export async function SiteFooter() {
             <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
               {t("stayHungry")}
             </p>
-            <div className="mt-5 flex items-center gap-2">
-              {socials.map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="grid size-9 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary/50 hover:text-primary"
-                >
-                  <Icon className="size-4" />
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>
